@@ -4,7 +4,11 @@
     <DebuggerFlavor>ProjectDebugger</DebuggerFlavor>
   </PropertyGroup>
   <PropertyGroup>
+<<<<<<< Updated upstream
     <ActiveDebugProfile>IIS Express</ActiveDebugProfile>
+=======
+    <ActiveDebugProfile>BestPrices.Site</ActiveDebugProfile>
+>>>>>>> Stashed changes
     <RazorPage_SelectedScaffolderID>RazorPageScaffolder</RazorPage_SelectedScaffolderID>
     <RazorPage_SelectedScaffolderCategoryPath>root/Common/RazorPage</RazorPage_SelectedScaffolderCategoryPath>
   </PropertyGroup>
