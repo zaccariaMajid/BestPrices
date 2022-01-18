@@ -1,12 +1,6 @@
 {
   "version": 2,
-<<<<<<< Updated upstream
-  "dgSpecHash": "VNIZbAFJGapSn8f5tSEiGQOBN7AWoa760oEYhvoAlHoIFY2Lhs2NuGPkkWzLvKClfUroRLvTHENr9C4G5laZhQ==",
-  "success": true,
-  "projectFilePath": "C:\\Users\\giuggioli.17210\\Documents\\GitHub\\BestPrices\\BestPrices.Site\\BestPrices.Site\\BestPrices.Site.csproj",
-  "expectedPackageFiles": [],
-=======
-  "dgSpecHash": "DXwm0EH816g1I9T5zcK4vgiDvhHIm+2JeYxXGGA4eqHFURBBQ0hTD4qkn9EjvymLP6S4O2u+Xltnf1CXpPRHtw==",
+  "dgSpecHash": "giI3oJYrPFQNPxPRnpXyE/cZ9kNjA/Kaij5l7aNe62S77SeJ4di1gUXhwAxDVNrJtGwHTMP1V4kjXZHxEAhqpw==",
   "success": true,
   "projectFilePath": "C:\\Users\\sonzogni.17133\\Documents\\GitHub\\BestPrices\\BestPrices.Site\\BestPrices.Site\\BestPrices.Site.csproj",
   "expectedPackageFiles": [
@@ -41,6 +35,5 @@
     "C:\\Users\\sonzogni.17133\\.nuget\\packages\\system.diagnostics.diagnosticsource\\5.0.1\\system.diagnostics.diagnosticsource.5.0.1.nupkg.sha512",
     "C:\\Users\\sonzogni.17133\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512"
   ],
->>>>>>> Stashed changes
   "logs": []
 }

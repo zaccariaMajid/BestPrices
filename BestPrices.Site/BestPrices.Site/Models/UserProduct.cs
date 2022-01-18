@@ -1,9 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-<<<<<<< Updated upstream
-=======
 using System.ComponentModel.DataAnnotations;
->>>>>>> Stashed changes
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -11,11 +8,6 @@ namespace BestPrices.Site.Models
 {
     public class UserProduct
     {
-<<<<<<< Updated upstream
-        public string IdUser { get; set; }
-        public string IdProduct { get; set; }
-        public bool IsFavourite { get; set; }
-=======
         [Key, Required]
         public string IdUserProduct { get; set; }
 
@@ -27,6 +19,5 @@ namespace BestPrices.Site.Models
 
         [Required]
         public bool IsFavorite { get; set; }
->>>>>>> Stashed changes
     }
 }
