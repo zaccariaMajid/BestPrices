@@ -1,0 +1,33 @@
+﻿@page
+@model BestPrices.Site.Pages.History.IndexModel
+@{
+    ViewData["Title"] = "History " + Model.User.Name;
+}
+<h1>@ViewData["Title"]</h1>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-4">
+            <label>Date</label>
+        </div>
+        <div class="col-sm-4">
+            <label>Name product</label>
+        </div>
+        <div class="col-sm-4">
+            <label>Link</label>
+        </div>
+    </div>
+    @foreach (var p in Model.Products)
+    {
+        <div class="row">
+            <div class="col-sm-4">
+                <label>@p.Date.ToString("G")</label>
+            </div>
+            <div class="col-sm-4">
+                <label>@p.Name</label>
+            </div>
+            <div class="col-sm-4">
+                <a href=@p.Link target="_blank">Buy now</a>
+            </div>
+        </div>
+    }
+</div>
