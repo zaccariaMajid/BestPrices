@@ -9,7 +9,7 @@ namespace BestPrices.Site.Models
     public class UserProduct
     {
         [Key, Required]
-        public string IdUserProduct { get; set; }
+        public string Id { get; set; }
 
         [Required]
         public string IdUser { get; set; }
@@ -18,6 +18,6 @@ namespace BestPrices.Site.Models
         public string IdProduct { get; set; }
 
         [Required]
-        public bool IsFavorite { get; set; }
+        public bool IsFavourite { get; set; }
     }
 }

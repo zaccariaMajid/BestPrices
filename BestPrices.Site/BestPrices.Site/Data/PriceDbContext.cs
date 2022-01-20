@@ -9,10 +9,8 @@ namespace BestPrices.Site.Data
 {
     public class PriceDbContext : DbContext
     {
-        public PriceDbContext(DbContextOptions options):base(options)
-        {
-
-        }
+        public PriceDbContext(DbContextOptions options) : base(options)
+        { }
 
         public DbSet<Product> Products { get; set; }
         public DbSet<User> Users { get; set; }

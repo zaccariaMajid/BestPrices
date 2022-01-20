@@ -9,7 +9,7 @@ namespace BestPrices.Site.Models
     public class Product
     {
         [Key, Required]
-        public string IdProduct { get; set; }
+        public string Id { get; set; }
 
         [Required]
         public string Name { get; set; }

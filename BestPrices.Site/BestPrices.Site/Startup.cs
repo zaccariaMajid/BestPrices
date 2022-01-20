@@ -26,7 +26,7 @@ namespace BestPrices.Site
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<PriceDbContext>(options =>
-                                    options.UseSqlite(Configuration.GetConnectionString("PriceConnection")));
+                                    options.UseSqlite(Configuration.GetConnectionString("BestPriceConnection")));
             services.AddRazorPages();
         }
 

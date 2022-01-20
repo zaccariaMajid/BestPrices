@@ -9,7 +9,7 @@ namespace BestPrices.Site.Models
     public class Ecommerce
     {
         [Key, Required]
-        public string IdEcommerce { get; set; }
+        public string Id { get; set; }
 
         [Required]
         public string Name { get; set; }
