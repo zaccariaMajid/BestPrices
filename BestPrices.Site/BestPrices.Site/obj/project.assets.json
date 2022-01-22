@@ -1178,19 +1178,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\mbiss\\.nuget\\packages\\": {}
+    "C:\\Users\\bissola.17117\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mbiss\\OneDrive\\Documenti\\GitHub\\BestPrices\\BestPrices.Site\\BestPrices.Site\\BestPrices.Site.csproj",
+      "projectUniqueName": "C:\\Users\\bissola.17117\\Documents\\GitHub\\BestPrices\\BestPrices.Site\\BestPrices.Site\\BestPrices.Site.csproj",
       "projectName": "BestPrices.Site",
-      "projectPath": "C:\\Users\\mbiss\\OneDrive\\Documenti\\GitHub\\BestPrices\\BestPrices.Site\\BestPrices.Site\\BestPrices.Site.csproj",
-      "packagesPath": "C:\\Users\\mbiss\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mbiss\\OneDrive\\Documenti\\GitHub\\BestPrices\\BestPrices.Site\\BestPrices.Site\\obj\\",
+      "projectPath": "C:\\Users\\bissola.17117\\Documents\\GitHub\\BestPrices\\BestPrices.Site\\BestPrices.Site\\BestPrices.Site.csproj",
+      "packagesPath": "C:\\Users\\bissola.17117\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\bissola.17117\\Documents\\GitHub\\BestPrices\\BestPrices.Site\\BestPrices.Site\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "C:\\Users\\mbiss\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\bissola.17117\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1253,7 +1257,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
       }
     }
   }
