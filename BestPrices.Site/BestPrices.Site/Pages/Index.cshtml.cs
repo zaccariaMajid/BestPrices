@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using BestPrices.Site.Data;
+using BestPrices.Site.Models;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
 using System;
@@ -10,13 +12,12 @@ namespace BestPrices.Site.Pages
 {
     public class IndexModel : PageModel
     {
-        private readonly ILogger<IndexModel> _logger;
-
-        public IndexModel(ILogger<IndexModel> logger)
+        private readonly PriceDbContext _context;
+        public IndexModel(PriceDbContext context)
         {
-            _logger = logger;
+            _context = context;
         }
-
+        public User User { get; set; }
         public void OnGet()
         {
 

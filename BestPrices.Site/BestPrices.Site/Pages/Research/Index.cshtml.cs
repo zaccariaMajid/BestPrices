@@ -20,13 +20,15 @@ namespace BestPrices.Site.Pages.Research
         [BindProperty]
         public string ReasearchText { get; set; }
         [BindProperty]
-        public Product Product { get; set; }
-        [BindProperty]
-        public bool IsProductNull { get; set; }
+        public IList<Product> Products { get; set; }
        
         public IActionResult OnGet()
         {
             return Page();
+        }
+        public async Task<string> GetEcommerceById(string id)
+        {
+            return _context.Sites.SingleOrDefault(x => x.Id == id).Name;
         }
     }
 }

@@ -4,7 +4,17 @@
     ViewData["Title"] = "Home page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+@if (Model.User != null)
+{
+    <div class="text-center">
+        <h1 class="display-4">Welcome @Model.User.Username on BestPrices</h1>
+    </div>
+}
+@if (Model.User == null)
+{
+    <div class="text-center">
+        <h1 class="display-4">Welcome on BestPrices</h1>
+        <p class="mt-5"><a href="/users/register">Became a User</a> for a best experience on BestPrices</p>
+    </div>
+}
+
