@@ -146,3 +146,7 @@ C:\Users\bissola.17117\Documents\GitHub\BestPrices\BestPrices.Site\BestPrices.Si
 C:\Users\bissola.17117\Documents\GitHub\BestPrices\BestPrices.Site\BestPrices.Site\obj\Debug\net5.0\BestPrices.Site.pdb
 C:\Users\bissola.17117\Documents\GitHub\BestPrices\BestPrices.Site\BestPrices.Site\obj\Debug\net5.0\BestPrices.Site.genruntimeconfig.cache
 C:\Users\bissola.17117\Documents\GitHub\BestPrices\BestPrices.Site\BestPrices.Site\obj\Debug\net5.0\Razor\Pages\Shared\_CookieConsentPartial.cshtml.g.cs
+C:\Users\giuggioli.17210\Documents\GitHub\BestPrices\BestPrices.Site\BestPrices.Site\bin\Debug\net5.0\Microsoft.AspNetCore.Http.Features.dll
+C:\Users\giuggioli.17210\Documents\GitHub\BestPrices\BestPrices.Site\BestPrices.Site\bin\Debug\net5.0\Microsoft.Extensions.Primitives.dll
+C:\Users\giuggioli.17210\Documents\GitHub\BestPrices\BestPrices.Site\BestPrices.Site\bin\Debug\net5.0\System.IO.Pipelines.dll
+C:\Users\giuggioli.17210\Documents\GitHub\BestPrices\BestPrices.Site\BestPrices.Site\obj\Debug\net5.0\Razor\Pages\Shared\_CookieConsentPartial.cshtml.g.cs

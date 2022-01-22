@@ -1,35 +1,49 @@
 ﻿@page
 @model BestPrices.Site.Pages.History.IndexModel
 @{
-    ViewData["Title"] = "History " + Model.User.Username;
+    if(Model.User != null)
+        ViewData["Title"] = "History " + Model.User.Username;
+    else
+        ViewData["Title"] = "History ";
 }
-
-
-<h1>@ViewData["Title"]</h1>
-<div class="container">
-    <div class="row">
-        <div class="col-sm-4">
-            <label>Date</label>
-        </div>
-        <div class="col-sm-4">
-            <label>Name product</label>
-        </div>
-        <div class="col-sm-4">
-            <label>Link</label>
-        </div>
+<div class="text-center">
+    <h1 class="display-4">@ViewData["Title"]</h1>
+</div>
+@if (Model.User == null)
+{
+    <div class="text-center mt-5">
+        <p>You are not logged in! <a asp-page="/users/signin">Sign in</a> or <a asp-page="/users/login">Log in</a></p>
     </div>
-    @foreach (var p in Model.Products)
-    {
+
+}
+@if (Model.User != null)
+{
+    <div class="container mt-5">
         <div class="row">
             <div class="col-sm-4">
-                <label>@p.Date.ToString("G")</label>
+                <label>Date</label>
             </div>
             <div class="col-sm-4">
-                <label>@p.Name</label>
+                <label>Name product</label>
             </div>
             <div class="col-sm-4">
-                <a href=@p.Link target="_blank">Buy now</a>
+                <label>Link</label>
             </div>
         </div>
-    }
-</div>
+        @foreach (var p in Model.Products)
+        {
+            <div class="row">
+                <div class="col-sm-4">
+                    <label>@p.Date.ToString("G")</label>
+                </div>
+                <div class="col-sm-4">
+                    <label>@p.Name</label>
+                </div>
+                <div class="col-sm-4">
+                    <a href=@p.Link target="_blank">Buy now</a>
+                </div>
+            </div>
+        }
+    </div>
+}
+

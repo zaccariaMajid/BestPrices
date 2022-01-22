@@ -15,17 +15,24 @@ namespace BestPrices.Site.Pages.History
         public IndexModel(PriceDbContext context)
         {
             _context = context;
-            Products = _context.Products
+            try
+            {
+                Products = _context.Products
                 .Where(x => _context.UsersProducts
                                 .Select(x => x.IdUser)
                                 .ToList()
-                                .Contains(User.Id) && 
+                                .Contains(User.Id) &&
                             _context.UsersProducts
                                 .Select(x => x.IdProduct)
                                 .ToList()
                                 .Contains(x.Id))
                 .ToList();
-            Products = Products.OrderByDescending(x => x.Date).ToList();
+                Products = Products.OrderByDescending(x => x.Date).ToList();
+            }
+            catch
+            {
+                Products = new List<Product>();
+            }
         }
         public new User User { get; set; }
         public IList<Product> Products { get; set; }
