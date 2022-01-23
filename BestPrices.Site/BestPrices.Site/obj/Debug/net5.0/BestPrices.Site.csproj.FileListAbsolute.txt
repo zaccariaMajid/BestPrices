@@ -193,7 +193,6 @@ C:\Users\giugg\source\repos\BestPrices\BestPrices.Site\BestPrices.Site\bin\Debug
 C:\Users\giugg\source\repos\BestPrices\BestPrices.Site\BestPrices.Site\bin\Debug\net5.0\runtimes\win-arm64\native\e_sqlite3.dll
 C:\Users\giugg\source\repos\BestPrices\BestPrices.Site\BestPrices.Site\bin\Debug\net5.0\runtimes\win-x64\native\e_sqlite3.dll
 C:\Users\giugg\source\repos\BestPrices\BestPrices.Site\BestPrices.Site\bin\Debug\net5.0\runtimes\win-x86\native\e_sqlite3.dll
-C:\Users\giugg\source\repos\BestPrices\BestPrices.Site\BestPrices.Site\obj\Debug\net5.0\BestPrices.Site.csproj.AssemblyReference.cache
 C:\Users\giugg\source\repos\BestPrices\BestPrices.Site\BestPrices.Site\obj\Debug\net5.0\BestPrices.Site.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\giugg\source\repos\BestPrices\BestPrices.Site\BestPrices.Site\obj\Debug\net5.0\BestPrices.Site.AssemblyInfoInputs.cache
 C:\Users\giugg\source\repos\BestPrices\BestPrices.Site\BestPrices.Site\obj\Debug\net5.0\BestPrices.Site.AssemblyInfo.cs
@@ -226,3 +225,5 @@ C:\Users\giugg\source\repos\BestPrices\BestPrices.Site\BestPrices.Site\obj\Debug
 C:\Users\giugg\source\repos\BestPrices\BestPrices.Site\BestPrices.Site\obj\Debug\net5.0\BestPrices.Site.pdb
 C:\Users\giugg\source\repos\BestPrices\BestPrices.Site\BestPrices.Site\obj\Debug\net5.0\BestPrices.Site.genruntimeconfig.cache
 C:\Users\giugg\source\repos\BestPrices\BestPrices.Site\BestPrices.Site\obj\Debug\net5.0\Razor\Pages\users\register.cshtml.g.cs
+C:\Users\giugg\source\repos\BestPrices\BestPrices.Site\BestPrices.Site\obj\Debug\net5.0\Razor\Pages\users\Index.cshtml.g.cs
+C:\Users\giugg\source\repos\BestPrices\BestPrices.Site\BestPrices.Site\obj\Debug\net5.0\BestPrices.Site.csproj.AssemblyReference.cache

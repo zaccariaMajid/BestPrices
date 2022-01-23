@@ -1,0 +1,9 @@
+﻿@page
+@model BestPrices.Site.Pages.users.IndexModel
+@{
+    ViewData["Title"] = "User";
+}
+<h1 class="display-4">@ViewData["Title"]</h1>
+<p>@Model.User.Id</p>
+<p>@Model.User.Username</p>
+<p>@Model.User.Email</p>

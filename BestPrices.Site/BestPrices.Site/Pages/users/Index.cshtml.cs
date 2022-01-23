@@ -1,14 +1,13 @@
-﻿using BestPrices.Site.Data;
-using BestPrices.Site.Models;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.RazorPages;
-using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using BestPrices.Site.Data;
+using BestPrices.Site.Models;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace BestPrices.Site.Pages
+namespace BestPrices.Site.Pages.users
 {
     public class IndexModel : PageModel
     {
