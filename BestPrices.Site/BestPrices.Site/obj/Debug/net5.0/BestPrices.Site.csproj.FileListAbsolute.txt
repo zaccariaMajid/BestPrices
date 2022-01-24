@@ -69,7 +69,6 @@ C:\Users\giuggioli.17210\Documents\GitHub\BestPrices\BestPrices.Site\BestPrices.
 C:\Users\giuggioli.17210\Documents\GitHub\BestPrices\BestPrices.Site\BestPrices.Site\bin\Debug\net5.0\runtimes\win-x86\native\e_sqlite3.dll
 C:\Users\giuggioli.17210\Documents\GitHub\BestPrices\BestPrices.Site\BestPrices.Site\obj\Debug\net5.0\Razor\Pages\Research\Index.cshtml.g.cs
 C:\Users\giuggioli.17210\Documents\GitHub\BestPrices\BestPrices.Site\BestPrices.Site\obj\Debug\net5.0\Razor\Pages\Users\Login.cshtml.g.cs
-C:\Users\giuggioli.17210\Documents\GitHub\BestPrices\BestPrices.Site\BestPrices.Site\obj\Debug\net5.0\Razor\Pages\Users\Signin.cshtml.g.cs
 C:\Users\bissola.17117\Documents\GitHub\BestPrices\BestPrices.Site\BestPrices.Site\bin\Debug\net5.0\appsettings.Development.json
 C:\Users\bissola.17117\Documents\GitHub\BestPrices\BestPrices.Site\BestPrices.Site\bin\Debug\net5.0\appsettings.json
 C:\Users\bissola.17117\Documents\GitHub\BestPrices\BestPrices.Site\BestPrices.Site\bin\Debug\net5.0\libman.json
@@ -227,3 +226,5 @@ C:\Users\giugg\source\repos\BestPrices\BestPrices.Site\BestPrices.Site\obj\Debug
 C:\Users\giugg\source\repos\BestPrices\BestPrices.Site\BestPrices.Site\obj\Debug\net5.0\Razor\Pages\users\register.cshtml.g.cs
 C:\Users\giugg\source\repos\BestPrices\BestPrices.Site\BestPrices.Site\obj\Debug\net5.0\Razor\Pages\users\Index.cshtml.g.cs
 C:\Users\giugg\source\repos\BestPrices\BestPrices.Site\BestPrices.Site\obj\Debug\net5.0\BestPrices.Site.csproj.AssemblyReference.cache
+C:\Users\giuggioli.17210\Documents\GitHub\BestPrices\BestPrices.Site\BestPrices.Site\obj\Debug\net5.0\Razor\Pages\users\Index.cshtml.g.cs
+C:\Users\giuggioli.17210\Documents\GitHub\BestPrices\BestPrices.Site\BestPrices.Site\obj\Debug\net5.0\Razor\Pages\users\register.cshtml.g.cs

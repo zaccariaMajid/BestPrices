@@ -41,10 +41,13 @@ namespace BestPrices.Site.Pages.Users
                 Username = username
             };
             _context.Users.Add(newUser);
+
+            var cookies = Response.Cookies;
+            var options = new Microsoft.AspNetCore.Http.CookieOptions() { Expires = DateTime.Now.AddDays(30), IsEssential = true };
+            var index = CookiesManager.CurrentUserId;
+            cookies.Delete(index);
+            cookies.Append(index, newUser.Id, options);
             _context.SaveChangesAsync();
-            
-            var cookies = HttpContext.Response.Cookies;
-            cookies.Append(CookiesManager.CurrentUserId, newUser.Id, new Microsoft.AspNetCore.Http.CookieOptions() { Expires = DateTime.Now.AddDays(30)});
             return RedirectToPage("/users/Index");
         }
     }
