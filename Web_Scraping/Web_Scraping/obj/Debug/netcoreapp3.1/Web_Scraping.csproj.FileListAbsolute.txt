@@ -1,0 +1,16 @@
+C:\Users\bissola.17117\Desktop\Web_Scraping\Web_Scraping\bin\Debug\netcoreapp3.1\Web_Scraping.exe
+C:\Users\bissola.17117\Desktop\Web_Scraping\Web_Scraping\bin\Debug\netcoreapp3.1\Web_Scraping.deps.json
+C:\Users\bissola.17117\Desktop\Web_Scraping\Web_Scraping\bin\Debug\netcoreapp3.1\Web_Scraping.runtimeconfig.json
+C:\Users\bissola.17117\Desktop\Web_Scraping\Web_Scraping\bin\Debug\netcoreapp3.1\Web_Scraping.runtimeconfig.dev.json
+C:\Users\bissola.17117\Desktop\Web_Scraping\Web_Scraping\bin\Debug\netcoreapp3.1\Web_Scraping.dll
+C:\Users\bissola.17117\Desktop\Web_Scraping\Web_Scraping\bin\Debug\netcoreapp3.1\Web_Scraping.pdb
+C:\Users\bissola.17117\Desktop\Web_Scraping\Web_Scraping\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\bissola.17117\Desktop\Web_Scraping\Web_Scraping\bin\Debug\netcoreapp3.1\WebDriver.dll
+C:\Users\bissola.17117\Desktop\Web_Scraping\Web_Scraping\obj\Debug\netcoreapp3.1\Web_Scraping.csprojAssemblyReference.cache
+C:\Users\bissola.17117\Desktop\Web_Scraping\Web_Scraping\obj\Debug\netcoreapp3.1\Web_Scraping.AssemblyInfoInputs.cache
+C:\Users\bissola.17117\Desktop\Web_Scraping\Web_Scraping\obj\Debug\netcoreapp3.1\Web_Scraping.AssemblyInfo.cs
+C:\Users\bissola.17117\Desktop\Web_Scraping\Web_Scraping\obj\Debug\netcoreapp3.1\Web_Scraping.csproj.CoreCompileInputs.cache
+C:\Users\bissola.17117\Desktop\Web_Scraping\Web_Scraping\obj\Debug\netcoreapp3.1\Web_Scraping.csproj.CopyComplete
+C:\Users\bissola.17117\Desktop\Web_Scraping\Web_Scraping\obj\Debug\netcoreapp3.1\Web_Scraping.dll
+C:\Users\bissola.17117\Desktop\Web_Scraping\Web_Scraping\obj\Debug\netcoreapp3.1\Web_Scraping.pdb
+C:\Users\bissola.17117\Desktop\Web_Scraping\Web_Scraping\obj\Debug\netcoreapp3.1\Web_Scraping.genruntimeconfig.cache
