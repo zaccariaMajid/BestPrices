@@ -6,6 +6,7 @@
     <title>@ViewData["Title"] - BestPrices.Site</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
 </head>
 <body>
     <header>
@@ -19,16 +20,19 @@
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Index">Home</a>
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Index"><i class="bi bi-house"></i> Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/search/index">Search</a>
+                            <a class="nav-link text-dark" asp-area="" asp-page="/search/index"><i class="bi bi-search"></i> Search</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/history/index">History</a>
+                            <a class="nav-link text-dark" asp-area="" asp-page="/history/index"><i class="bi bi-clock-history"></i> History</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/users/Index">User area</a>
+                            <a class="nav-link text-dark" asp-area="" asp-page="/favourites/index"><i class="bi bi-heart"></i> Favourites</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-page="/users/Index"><i class="bi bi-person-circle"></i> User area</a>
                         </li>
                     </ul>
                 </div>

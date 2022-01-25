@@ -1,7 +1,7 @@
 ﻿@page
 @model BestPrices.Site.Pages.Research.IndexModel
 @{
-    ViewData["Title"] = "Research";
+    ViewData["Title"] = "Search";
 }
 <div class="text-center">
     <h1 class="display-4">@ViewData["Title"]</h1>
@@ -13,10 +13,10 @@
             <div class="col-sm-2">
             </div>
             <div class="col-7">
-                <input type="search" class="form-control" asp-for="@Model.ResearchText" placeholder="Find product..." />
+                <input type="search" class="form-control" asp-for="@Model.SearchText" placeholder="Find product..." />
             </div>
             <div class="col-3">
-                <input type="submit" class="btn btn-primary" value="Research" />
+                <input type="submit" class="btn btn-primary" value="Search" />
             </div>
         </div>
         @if (Model.Products != null)
@@ -25,14 +25,21 @@
             {
                 <div class="row mt-5 rounded shadow">
                     <div class="col-sm-4">
-                        <img src="@product.PathPhoto" alt="prova img" class="img-fluid mt-3 mb-3">
+                        <img src="@product.PathPhoto" alt="prova img" class="img-fluid mt-2 mb-3">
                     </div>
-                    <div class="col-sm text-center">
-                        <h3 class="display-4">@product.Name</h3>
-                        <p>@product.Description</p>
+                    <div class="col-sm">
+                        <div class="row ml-5">
+                            <div class="col">
+                                <h3 class="display-4">@product.Name</h3>
+                                <p>@product.Description</p>
+                            </div>
+                            <div class="col text-right mt-2 mr-3">
+                                <span class="float-right"><i class="bi bi-heart" style="font-size: 2.3em; "></i></span>
+                            </div>
+                        </div>
                         <br />
                         <div class="row">
-                            <div class="col-sm text-center">
+                            <div class="col-sm ml-5">
                                 <h3>€@product.Price</h3>
                             </div>
                             <div class="col-sm text-center">
@@ -40,7 +47,7 @@
                             </div>
                         </div>
                         <br /><br />
-                        <p>Ecommerce: <b>@Model.GetEcommerceById(product.IdEcommerce)</b></p>
+                        <p class="ml-5">Ecommerce: <b>@Model.GetEcommerceById(product.IdEcommerce)</b></p>
                     </div>
                 </div>
             }
