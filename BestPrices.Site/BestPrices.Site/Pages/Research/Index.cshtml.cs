@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using BestPrices.Site.Api;
 using BestPrices.Site.Data;
 using BestPrices.Site.Models;
 using Microsoft.AspNetCore.Mvc;
@@ -16,19 +17,27 @@ namespace BestPrices.Site.Pages.Research
         public IndexModel(PriceDbContext context)
         {
             _context = context;
+            _apiManager = new ApiManager();
         }
         [BindProperty]
-        public string ReasearchText { get; set; }
+        public string ResearchText { get; set; }
         [BindProperty]
         public IList<Product> Products { get; set; }
+        ApiManager _apiManager { get; set; }
        
         public IActionResult OnGet()
         {
             return Page();
         }
-        public async Task<string> GetEcommerceById(string id)
+        public string GetEcommerceById(string id)
         {
-            return _context.Sites.SingleOrDefault(x => x.Id == id).Name;
+            return "Amazon";
+            //return _context.Sites.SingleOrDefault(x => x.Id == id).Name;
+        }
+        public async Task<IActionResult> OnPostAsync()
+        {
+            Products = _apiManager.GetProducts(ResearchText);
+            return Page();
         }
     }
 }

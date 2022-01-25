@@ -23,12 +23,26 @@ namespace BestPrices.Site.Pages.Users
         public string ConfirmedPassword { get; set; }
         [BindProperty]
         public string username { get; set; }
+        [BindProperty]
+        public string ErrorText { get; set; }
         public async Task<IActionResult> OnGetAsync()
         {
             return Page();
         }
         public async Task<IActionResult> OnPostAsync()
         {
+            if (_context.Users.Select(x => x.Email).Contains(email))
+            {
+                ErrorText = "Email is already used";
+                return Page();
+            }
+
+            if (_context.Users.Select(x => x.Username).Contains(email))
+            {
+                ErrorText = "Username is already taken";
+                return Page();
+            }
+
             string encPassword = PasswordManager.EncodePasswordToBase64(Password);
             string encConfirmedPassword = PasswordManager.EncodePasswordToBase64(ConfirmedPassword);
             if (encPassword != encConfirmedPassword)
@@ -48,6 +62,7 @@ namespace BestPrices.Site.Pages.Users
             cookies.Delete(index);
             cookies.Append(index, newUser.Id, options);
             _context.SaveChangesAsync();
+            ErrorText = string.Empty;
             return RedirectToPage("/users/Index");
         }
     }

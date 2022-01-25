@@ -9,7 +9,6 @@ C:\Users\giuggioli.17210\Documents\GitHub\BestPrices\BestPrices.Site\BestPrices.
 C:\Users\giuggioli.17210\Documents\GitHub\BestPrices\BestPrices.Site\BestPrices.Site\bin\Debug\net5.0\BestPrices.Site.pdb
 C:\Users\giuggioli.17210\Documents\GitHub\BestPrices\BestPrices.Site\BestPrices.Site\bin\Debug\net5.0\BestPrices.Site.Views.dll
 C:\Users\giuggioli.17210\Documents\GitHub\BestPrices\BestPrices.Site\BestPrices.Site\bin\Debug\net5.0\BestPrices.Site.Views.pdb
-C:\Users\giuggioli.17210\Documents\GitHub\BestPrices\BestPrices.Site\BestPrices.Site\obj\Debug\net5.0\BestPrices.Site.csprojAssemblyReference.cache
 C:\Users\giuggioli.17210\Documents\GitHub\BestPrices\BestPrices.Site\BestPrices.Site\obj\Debug\net5.0\BestPrices.Site.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\giuggioli.17210\Documents\GitHub\BestPrices\BestPrices.Site\BestPrices.Site\obj\Debug\net5.0\BestPrices.Site.AssemblyInfoInputs.cache
 C:\Users\giuggioli.17210\Documents\GitHub\BestPrices\BestPrices.Site\BestPrices.Site\obj\Debug\net5.0\BestPrices.Site.AssemblyInfo.cs
@@ -228,3 +227,4 @@ C:\Users\giugg\source\repos\BestPrices\BestPrices.Site\BestPrices.Site\obj\Debug
 C:\Users\giugg\source\repos\BestPrices\BestPrices.Site\BestPrices.Site\obj\Debug\net5.0\BestPrices.Site.csproj.AssemblyReference.cache
 C:\Users\giuggioli.17210\Documents\GitHub\BestPrices\BestPrices.Site\BestPrices.Site\obj\Debug\net5.0\Razor\Pages\users\Index.cshtml.g.cs
 C:\Users\giuggioli.17210\Documents\GitHub\BestPrices\BestPrices.Site\BestPrices.Site\obj\Debug\net5.0\Razor\Pages\users\register.cshtml.g.cs
+C:\Users\giuggioli.17210\Documents\GitHub\BestPrices\BestPrices.Site\BestPrices.Site\obj\Debug\net5.0\BestPrices.Site.csproj.AssemblyReference.cache

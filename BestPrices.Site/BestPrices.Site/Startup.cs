@@ -31,6 +31,7 @@ namespace BestPrices.Site
                 options.CheckConsentNeeded = context => true;
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
+            
             services.AddDbContext<PriceDbContext>(options =>
                                     options.UseSqlite(Configuration.GetConnectionString("BestPriceConnection")));
             services.AddRazorPages();

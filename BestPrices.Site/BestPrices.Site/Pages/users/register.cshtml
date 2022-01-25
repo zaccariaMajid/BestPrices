@@ -55,6 +55,12 @@
                 <label>Do you already have an account? <a asp-page="/users/login">Log in</a></label>
             </div>
         </div>
+        @if (!string.IsNullOrEmpty(Model.ErrorText))
+        {
+            <div class="alert alert-danger">
+                <p>@Model.ErrorText</p>
+            </div>
+        }
     </div>
 
 </form>
