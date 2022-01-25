@@ -7,6 +7,6 @@ namespace BestPrices.Site
 {
     public static class CookiesManager
     {
-        public static string CurrentUserId = "UserId";
+        public static string UserIdKey = "UserId";
     }
 }

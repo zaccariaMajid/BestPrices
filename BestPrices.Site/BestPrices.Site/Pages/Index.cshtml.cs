@@ -17,14 +17,14 @@ namespace BestPrices.Site.Pages
         {
             _context = context;
         }
-        [BindProperty]
         public new User User { get; set; }
         public async Task<IActionResult> OnGetAsync()
         {
             var cookies = HttpContext.Request.Cookies;
+            var userId = cookies[CookiesManager.UserIdKey];
             try
             {
-                User = _context.Users.SingleOrDefault(x => x.Id == cookies[CookiesManager.CurrentUserId]);
+                User = _context.Users.SingleOrDefault(x => x.Id == userId);
             }
             catch
             {

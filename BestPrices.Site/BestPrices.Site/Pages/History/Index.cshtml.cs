@@ -15,10 +15,25 @@ namespace BestPrices.Site.Pages.History
         public IndexModel(PriceDbContext context)
         {
             _context = context;
+        }
+        public new User User { get; set; }
+        public IList<Product> Products { get; set; }
+        public async Task<IActionResult> OnGetAsync()
+        {
+            var cookies = HttpContext.Request.Cookies;
+            var userId = cookies[CookiesManager.UserIdKey];
+            try
+            {
+                User = _context.Users.SingleOrDefault(x => x.Id == userId);
+            }
+            catch
+            {
+                User = null;
+            }
             if (User == null)
             {
                 Products = new List<Product>();
-                return;
+                return Page();
             }
             Products = _context.Products
             .Where(x => _context.UsersProducts
@@ -31,12 +46,7 @@ namespace BestPrices.Site.Pages.History
                         .Contains(x.Id))
             .ToList();
             Products = Products.OrderByDescending(x => x.Date).ToList();
-
-        }
-        public new User User { get; set; }
-        public IList<Product> Products { get; set; }
-        public void OnGet()
-        {
+            return Page();
         }
     }
 }

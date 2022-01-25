@@ -57,8 +57,13 @@ namespace BestPrices.Site.Pages.Users
             _context.Users.Add(newUser);
 
             var cookies = Response.Cookies;
-            var options = new Microsoft.AspNetCore.Http.CookieOptions() { Expires = DateTime.Now.AddDays(30), IsEssential = true };
-            var index = CookiesManager.CurrentUserId;
+            var options = new Microsoft.AspNetCore.Http.CookieOptions()
+            {
+                Expires = DateTime.Now.AddDays(30),
+                IsEssential = true,
+                Secure = true
+            };
+            var index = CookiesManager.UserIdKey;
             cookies.Delete(index);
             cookies.Append(index, newUser.Id, options);
             _context.SaveChangesAsync();

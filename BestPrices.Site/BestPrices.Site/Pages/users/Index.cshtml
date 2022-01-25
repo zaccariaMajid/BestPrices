@@ -4,6 +4,34 @@
     ViewData["Title"] = "User";
 }
 <h1 class="display-4">@ViewData["Title"]</h1>
-<p>@Model.User.Id</p>
-<p>@Model.User.Username</p>
-<p>@Model.User.Email</p>
+<form method="post">
+    @if (Model.User == null)
+    {
+        <div>User not authenticated!</div>
+        <a href="/users/register">Register</a>
+        <a href="/users/login">Log in</a>
+    }
+    else
+    {
+        <div class="container">
+            <div class="row text-center">
+                <p>User Id: @Model.User.Id</p>
+            </div>
+            <div class="row text-center">
+                <p>Username: @Model.User.Username</p>
+            </div>
+            <div class="row text-center">
+                <p>Email: @Model.User.Email</p>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <input type="submit" value="Log out" class="btn btn-danger" />
+                </div>
+                <div class="col">
+                    <a href="/users/register" class="btn btn-outline-danger">Switch account</a>
+                </div>
+            </div>
+        </div>
+
+    }
+</form>
