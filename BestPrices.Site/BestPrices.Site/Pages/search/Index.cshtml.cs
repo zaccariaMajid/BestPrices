@@ -28,16 +28,7 @@ namespace BestPrices.Site.Pages.Research
 
         public IActionResult OnGet()
         {
-            var cookies = HttpContext.Request.Cookies;
-            var userId = cookies[CookiesManager.UserIdKey];
-            try
-            {
-                User = _context.Users.SingleOrDefault(x => x.Id == userId);
-            }
-            catch
-            {
-                User = null;
-            }
+            User = CookiesManager.GetUserByCookies(HttpContext.Request, _context);
             return Page();
         }
         public string GetEcommerceById(string id)

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using BestPrices.Site.Data;
+using BestPrices.Site.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
@@ -37,7 +38,7 @@ namespace BestPrices.Site.Pages.Users
                 return Page();
             }
 
-            if (_context.Users.Select(x => x.Username).Contains(email))
+            if (_context.Users.Select(x => x.Username).Contains(username))
             {
                 ErrorText = "Username is already taken";
                 return Page();
@@ -46,8 +47,12 @@ namespace BestPrices.Site.Pages.Users
             string encPassword = PasswordManager.EncodePasswordToBase64(Password);
             string encConfirmedPassword = PasswordManager.EncodePasswordToBase64(ConfirmedPassword);
             if (encPassword != encConfirmedPassword)
+            {
+                ErrorText = "Passwords doesn't match";
                 return Page();
-            var newUser = new BestPrices.Site.Models.User()
+            }
+                
+            var newUser = new User()
             {
                 Id = Guid.NewGuid().ToString(),
                 Email = email,
@@ -57,16 +62,11 @@ namespace BestPrices.Site.Pages.Users
             _context.Users.Add(newUser);
 
             var cookies = Response.Cookies;
-            var options = new Microsoft.AspNetCore.Http.CookieOptions()
-            {
-                Expires = DateTime.Now.AddDays(30),
-                IsEssential = true,
-                Secure = true
-            };
+            var options = CookiesManager.CookieOptions;
             var index = CookiesManager.UserIdKey;
             cookies.Delete(index);
             cookies.Append(index, newUser.Id, options);
-            _context.SaveChangesAsync();
+            _context.SaveChanges();
             ErrorText = string.Empty;
             return RedirectToPage("/users/Index");
         }

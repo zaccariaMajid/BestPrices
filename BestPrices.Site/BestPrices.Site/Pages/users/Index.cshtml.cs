@@ -21,16 +21,7 @@ namespace BestPrices.Site.Pages.users
         public new User User { get; set; }
         public async Task<IActionResult> OnGetAsync()
         {
-            var cookies = HttpContext.Request.Cookies;
-            var userId = cookies[CookiesManager.UserIdKey];
-            try
-            {
-                User = _context.Users.SingleOrDefault(x => x.Id == userId);
-            }
-            catch
-            {
-                User = null;
-            }
+            User = CookiesManager.GetUserByCookies(HttpContext.Request, _context);
             return Page();
         }
         public async Task<IActionResult>OnPostAsync()

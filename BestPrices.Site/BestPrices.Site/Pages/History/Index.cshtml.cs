@@ -20,16 +20,7 @@ namespace BestPrices.Site.Pages.History
         public IList<Product> Products { get; set; }
         public async Task<IActionResult> OnGetAsync()
         {
-            var cookies = HttpContext.Request.Cookies;
-            var userId = cookies[CookiesManager.UserIdKey];
-            try
-            {
-                User = _context.Users.SingleOrDefault(x => x.Id == userId);
-            }
-            catch
-            {
-                User = null;
-            }
+            User = CookiesManager.GetUserByCookies(HttpContext.Request, _context);
             if (User == null)
             {
                 Products = new List<Product>();

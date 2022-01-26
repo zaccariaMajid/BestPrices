@@ -1,34 +1,64 @@
 ﻿@page
 @model BestPrices.Site.Pages.users.IndexModel
 @{
-    ViewData["Title"] = "User";
+    ViewData["Title"] = "User area";
 }
-<h1 class="display-4">@ViewData["Title"]</h1>
+<div class="text-center">
+    <h1 class="display-4">@ViewData["Title"]</h1>
+</div>
+
 <form method="post">
     @if (Model.User == null)
     {
-        <div>User not authenticated!</div>
-        <a href="/users/register">Register</a>
-        <a href="/users/login">Log in</a>
+        <div class="text-center mt-5">
+            <p>You are not logged in! <a asp-page="/users/register">Register</a> or <a asp-page="/users/login">Log in</a></p>
+        </div>
     }
     else
     {
-        <div class="container">
-            <div class="row text-center">
-                <p>User Id: @Model.User.Id</p>
-            </div>
-            <div class="row text-center">
-                <p>Username: @Model.User.Username</p>
-            </div>
-            <div class="row text-center">
-                <p>Email: @Model.User.Email</p>
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col">
+                    <p>User Id: @Model.User.Id</p>
+                </div>
             </div>
             <div class="row">
                 <div class="col">
+                    <p>Username: @Model.User.Username</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <p>Email: @Model.User.Email</p>
+                </div>
+            </div>
+            <div class="row mt-2">
+                <div class="col">
+                    <a href="/users/edit"><i class="bi bi-pencil-square"></i> Edit your data</a>
+                </div>
+            </div>
+            <div class="row mt-2">
+                <div class="col">
+                    <a href="/users/changepassword"><i class="bi bi-lock"></i> Change password</a>
+                </div>
+            </div>
+            <div class="row mt-2">
+                <div class="col">
+                    <a href="/history/"><i class="bi bi-clock-history"></i> History</a>
+                </div>
+            </div><div class="row mt-2">
+                <div class="col">
+                    <a href="/favourites/"><i class="bi bi-heart"></i> Your favourites</a>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-2">
                     <input type="submit" value="Log out" class="btn btn-danger" />
                 </div>
+                <div class="col-1">
+                </div>
                 <div class="col">
-                    <a href="/users/register" class="btn btn-outline-danger">Switch account</a>
+                    <a href="/users/login" class="btn btn-outline-danger">Switch account</a>
                 </div>
             </div>
         </div>
