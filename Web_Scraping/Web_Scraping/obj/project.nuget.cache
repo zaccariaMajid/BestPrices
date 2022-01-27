@@ -1,13 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "TlkEOyJyPpayJRZl08ma7YgK2FxuoxO76oXIJB2tv6V//hL8COnK784bC7vONCufDDTFXVlkNlHp5jyB2kFnrw==",
+  "dgSpecHash": "5gJlYerx2YuxHq9BhWlTBau/s0ljn3J/5WXwKBo5YtFgNIygJOZB65AfiKznTh8Sv7P9iRdkJF6HSQX97eNANg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\bissola.17117\\Desktop\\Web_Scraping\\Web_Scraping\\Web_Scraping.csproj",
+  "projectFilePath": "C:\\Users\\sonzogni.17133\\Documents\\GitHub\\BestPrices\\Web_Scraping\\Web_Scraping\\Web_Scraping.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\bissola.17117\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
-    "C:\\Users\\bissola.17117\\.nuget\\packages\\selenium.webdriver\\4.1.0\\selenium.webdriver.4.1.0.nupkg.sha512",
-    "C:\\Users\\bissola.17117\\.nuget\\packages\\selenium.webdriver.chromedriver\\97.0.4692.7100\\selenium.webdriver.chromedriver.97.0.4692.7100.nupkg.sha512",
-    "C:\\Users\\bissola.17117\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.12\\microsoft.netcore.app.host.win-x64.3.1.12.nupkg.sha512"
+    "C:\\Users\\sonzogni.17133\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\sonzogni.17133\\.nuget\\packages\\selenium.webdriver\\4.1.0\\selenium.webdriver.4.1.0.nupkg.sha512",
+    "C:\\Users\\sonzogni.17133\\.nuget\\packages\\selenium.webdriver.chromedriver\\97.0.4692.7100\\selenium.webdriver.chromedriver.97.0.4692.7100.nupkg.sha512",
+    "C:\\Users\\sonzogni.17133\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.13\\microsoft.netcore.app.host.win-x64.3.1.13.nupkg.sha512"
   ],
   "logs": []
 }

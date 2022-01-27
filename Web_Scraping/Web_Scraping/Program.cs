@@ -28,16 +28,16 @@ namespace Web_Scraping
                 try
                 {
                     asd.Name = a.FindElement(By.ClassName("a-size-large")).Text;
-                    asd.Description= a.FindElement(By.ClassName("a-unordered-list a-vertical a-spacing-mini")).Text;
-                    asd.Price=decimal.Parse(a.FindElement(By.ClassName("a-price-whole")).Text);
+                    asd.Description = a.FindElement(By.ClassName("a-unordered-list a-vertical a-spacing-mini")).Text;
+                    asd.Price = decimal.Parse(a.FindElement(By.ClassName("a-price-whole")).Text);
                     asd.Price = decimal.Parse(a.FindElement(By.ClassName("a-price-fraction")).Text);
-                    asd.Date=DateTime.Parse(a.FindElement(By.ClassName("a-text-bold")).Text);
+                    asd.Date = DateTime.Parse(a.FindElement(By.ClassName("a-text-bold")).Text);
                     asd.PathPhoto = a.FindElement(By.ClassName("https://m.media-amazon.com/images/I/71iHRMQFUFL._AC_UL320_.jpg")).Text;
                     listaprodotti.Add(asd);
-                   
-                catch 
+                }
+                catch
                 {
-                    
+
                 }
             }
 
