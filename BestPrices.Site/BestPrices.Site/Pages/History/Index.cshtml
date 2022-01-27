@@ -1,10 +1,7 @@
 ﻿@page
 @model BestPrices.Site.Pages.History.IndexModel
 @{
-    if (Model.User != null)
-        ViewData["Title"] = "History";
-    else
-        ViewData["Title"] = "History";
+    ViewData["Title"] = "History";
 }
 @if (Model.User == null)
 {
@@ -15,20 +12,20 @@
         <p>You are not logged in! <a asp-page="/users/register">Register</a> or <a asp-page="/users/login">Log in</a></p>
     </div>
 }
-@if (Model.User != null)
+else
 {
     <div class="text-center">
         <h1 class="display-4">@ViewData["Title"] - @Model.User.Username</h1>
     </div>
     <div class="container mt-5">
         <div class="row">
-            <div class="col-sm-4">
+            <div class="col-4">
                 <label>Date</label>
             </div>
-            <div class="col-sm-4">
+            <div class="col-4">
                 <label>Name product</label>
             </div>
-            <div class="col-sm-4">
+            <div class="col-4">
                 <label>Link</label>
             </div>
         </div>

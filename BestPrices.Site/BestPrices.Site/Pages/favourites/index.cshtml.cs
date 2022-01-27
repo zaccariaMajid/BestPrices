@@ -16,11 +16,28 @@ namespace BestPrices.Site.Pages.favourites
         {
             _context = context;
         }
+        [BindProperty]
+        public IList<Product> Products { get; set; }
         public User User { get; set; }
         public async Task<IActionResult> OnGetAsync()
         {
             User = CookiesManager.GetUserByCookies(HttpContext.Request, _context);
+            if (User != null)
+            {
+                IList<string> IdProducts = _context.UsersProducts.Where(x => x.IdUser == User.Id && x.IsFavourite == true)
+                                                                 .ToList()
+                                                                 .Select(y => y.IdProduct)
+                                                                 .ToList();
+                Products = _context.Products.Where(x => IdProducts.Contains(x.Id))
+                                            .ToList();
+            }
+
             return Page();
+        }
+        public string GetEcommerceById(string id)
+        {
+            return "Amazon";
+            //return _context.Sites.SingleOrDefault(x => x.Id == id).Name;
         }
     }
 }

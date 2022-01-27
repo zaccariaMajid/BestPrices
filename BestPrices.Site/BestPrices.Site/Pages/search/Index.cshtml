@@ -12,11 +12,17 @@
         <div class="row">
             <div class="col-sm-2">
             </div>
-            <div class="col-7">
-                <input type="search" class="form-control" asp-for="@Model.SearchText" placeholder="Find product..." />
+            <div class="col">
+                <div class="row">
+                    <div class="col-9">
+                        <input type="search" class="form-control" asp-for="@Model.SearchText" placeholder="Find product..." />
+                    </div>
+                    <div class="col-3">
+                        <input type="submit" class="btn btn-primary" value="Search" />
+                    </div>
+                </div>
             </div>
-            <div class="col-3">
-                <input type="submit" class="btn btn-primary" value="Search" />
+            <div class="col-sm-2">
             </div>
         </div>
         @if (Model.Products != null)
@@ -27,8 +33,10 @@
                     <div class="col-sm-4">
                         <img src="@product.PathPhoto" alt="prova img" class="img-fluid mt-2 mb-3">
                     </div>
+                    <div class="col-sm-1">
+                    </div>
                     <div class="col-sm">
-                        <div class="row ml-5">
+                        <div class="row">
                             <div class="col">
                                 <h3 class="display-4">@product.Name</h3>
                                 <p>@product.Description</p>
@@ -39,15 +47,18 @@
                         </div>
                         <br />
                         <div class="row">
-                            <div class="col-sm ml-5">
+                            <div class="col">
                                 <h3>€@product.Price</h3>
                             </div>
-                            <div class="col-sm text-center">
-                                <a class="btn btn-outline-primary" href="@product.Link" target="_blank">Buy now</a>
+                            <div class="col text-right mb-5 mr-3">
+                                <a class="btn btn-outline-primary float-right" href="@product.Link" target="_blank">Buy now</a>
                             </div>
                         </div>
-                        <br /><br />
-                        <p class="ml-5">Ecommerce: <b>@Model.GetEcommerceById(product.IdEcommerce)</b></p>
+                        <div class="row">
+                            <div class="col">
+                                <p>Ecommerce: <b>@Model.GetEcommerceById(product.IdEcommerce)</b></p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             }

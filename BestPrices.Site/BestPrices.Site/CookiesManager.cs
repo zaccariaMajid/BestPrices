@@ -21,7 +21,7 @@ namespace BestPrices.Site
         {
             User user;
             var cookies = request.Cookies;
-            var userId = cookies[CookiesManager.UserIdKey];
+            var userId = cookies[UserIdKey];
             try
             {
                 user = context.Users.SingleOrDefault(x => x.Id == userId);
