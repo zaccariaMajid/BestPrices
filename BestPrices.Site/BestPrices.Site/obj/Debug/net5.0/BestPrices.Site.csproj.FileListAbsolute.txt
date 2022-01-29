@@ -127,11 +127,9 @@ C:\Users\bissola.17117\Documents\GitHub\BestPrices\BestPrices.Site\BestPrices.Si
 C:\Users\bissola.17117\Documents\GitHub\BestPrices\BestPrices.Site\BestPrices.Site\obj\Debug\net5.0\Razor\Pages\Error.cshtml.g.cs
 C:\Users\bissola.17117\Documents\GitHub\BestPrices\BestPrices.Site\BestPrices.Site\obj\Debug\net5.0\Razor\Pages\History\Index.cshtml.g.cs
 C:\Users\bissola.17117\Documents\GitHub\BestPrices\BestPrices.Site\BestPrices.Site\obj\Debug\net5.0\Razor\Pages\Index.cshtml.g.cs
-C:\Users\bissola.17117\Documents\GitHub\BestPrices\BestPrices.Site\BestPrices.Site\obj\Debug\net5.0\Razor\Pages\Research\Index.cshtml.g.cs
 C:\Users\bissola.17117\Documents\GitHub\BestPrices\BestPrices.Site\BestPrices.Site\obj\Debug\net5.0\Razor\Pages\Shared\_Layout.cshtml.g.cs
 C:\Users\bissola.17117\Documents\GitHub\BestPrices\BestPrices.Site\BestPrices.Site\obj\Debug\net5.0\Razor\Pages\Shared\_ValidationScriptsPartial.cshtml.g.cs
 C:\Users\bissola.17117\Documents\GitHub\BestPrices\BestPrices.Site\BestPrices.Site\obj\Debug\net5.0\Razor\Pages\users\login.cshtml.g.cs
-C:\Users\bissola.17117\Documents\GitHub\BestPrices\BestPrices.Site\BestPrices.Site\obj\Debug\net5.0\Razor\Pages\users\signin.cshtml.g.cs
 C:\Users\bissola.17117\Documents\GitHub\BestPrices\BestPrices.Site\BestPrices.Site\obj\Debug\net5.0\Razor\Pages\_ViewImports.cshtml.g.cs
 C:\Users\bissola.17117\Documents\GitHub\BestPrices\BestPrices.Site\BestPrices.Site\obj\Debug\net5.0\Razor\Pages\_ViewStart.cshtml.g.cs
 C:\Users\bissola.17117\Documents\GitHub\BestPrices\BestPrices.Site\BestPrices.Site\obj\Debug\net5.0\BestPrices.Site.RazorTargetAssemblyInfo.cache
@@ -231,3 +229,8 @@ C:\Users\giuggioli.17210\Documents\GitHub\BestPrices\BestPrices.Site\BestPrices.
 C:\Users\giuggioli.17210\Documents\GitHub\BestPrices\BestPrices.Site\BestPrices.Site\obj\Debug\net5.0\Razor\Pages\search\Index.cshtml.g.cs
 C:\Users\giuggioli.17210\Documents\GitHub\BestPrices\BestPrices.Site\BestPrices.Site\obj\Debug\net5.0\Razor\Pages\users\changepassword.cshtml.g.cs
 C:\Users\giuggioli.17210\Documents\GitHub\BestPrices\BestPrices.Site\BestPrices.Site\obj\Debug\net5.0\BestPrices.Site.csprojAssemblyReference.cache
+C:\Users\bissola.17117\Documents\GitHub\BestPrices\BestPrices.Site\BestPrices.Site\obj\Debug\net5.0\Razor\Pages\favourites\index.cshtml.g.cs
+C:\Users\bissola.17117\Documents\GitHub\BestPrices\BestPrices.Site\BestPrices.Site\obj\Debug\net5.0\Razor\Pages\search\Index.cshtml.g.cs
+C:\Users\bissola.17117\Documents\GitHub\BestPrices\BestPrices.Site\BestPrices.Site\obj\Debug\net5.0\Razor\Pages\users\changepassword.cshtml.g.cs
+C:\Users\bissola.17117\Documents\GitHub\BestPrices\BestPrices.Site\BestPrices.Site\obj\Debug\net5.0\Razor\Pages\users\Index.cshtml.g.cs
+C:\Users\bissola.17117\Documents\GitHub\BestPrices\BestPrices.Site\BestPrices.Site\obj\Debug\net5.0\Razor\Pages\users\register.cshtml.g.cs
