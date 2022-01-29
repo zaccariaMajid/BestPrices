@@ -21,6 +21,8 @@ namespace BestPrices.Site.Pages.Users
         public string UsernameEmail { get; set; }
         [BindProperty]
         public string Password { get; set; }
+        [BindProperty]
+        public string ErrorText { get; set; }
         public async Task<IActionResult> OnGetAsync()
         {
             return Page();
@@ -29,7 +31,11 @@ namespace BestPrices.Site.Pages.Users
         {
             string encPassword = PasswordManager.EncodePasswordToBase64(Password);
             User user = _context.Users.SingleOrDefault(x => (x.Username == UsernameEmail || x.Email == UsernameEmail) && x.Password == encPassword);
-
+            if(user == null)
+            {
+                ErrorText = "Usernme/email or password wrong";
+                return Page();
+            }
             var cookies = HttpContext.Response.Cookies;
             var options = new Microsoft.AspNetCore.Http.CookieOptions() { Expires = DateTime.Now.AddDays(30), 
                 IsEssential = true, Secure = true };

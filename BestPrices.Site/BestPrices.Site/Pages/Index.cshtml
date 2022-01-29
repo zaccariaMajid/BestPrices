@@ -9,6 +9,33 @@
     <div class="text-center">
         <h1 class="display-4">Welcome @Model.User.Username on BestPrices</h1>
     </div>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-sm-1">
+            </div>
+            <div class="col rounded shadow">
+                <div class="m-2">
+                    <img src="~/img/search1.jpg" class="img-fluid bi-search" />
+                </div>
+                <div class="text-center mb-3">
+                    <h1 class="display-4">Search a product</h1>
+                    <a href="/search/" class="btn btn-outline-primary"><i class="bi bi-search"></i> Search now</a>
+                </div>
+            </div>
+            <div class="col-sm-3">
+            </div>
+            <div class="col rounded shadow">
+                <div class="m-2">
+                    <img src="~/img/search1.jpg" class="img-fluid bi-search" />
+                </div>
+                <div class="text-center">
+                    <h1 class="display-4">Search a product</h1>
+                </div>
+            </div>
+            <div class="col-sm-1">
+            </div>
+        </div>
+    </div>
 }
 else
 {
@@ -17,29 +44,3 @@ else
         <p class="mt-5"><a href="/users/register">Become a User</a> for a best experience on BestPrices</p>
     </div>
 }
-<div class="container mt-3">
-    <div class="row">
-        <div class="col-sm-1">
-        </div>
-        <div class="col rounded shadow">
-            <div class="m-2">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="img-fluid bi-search m-2" viewBox="0 0 16 16">
-                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
-                </svg>
-            </div>
-            <div class="text-center">
-                <h1 class="display-4" style="max-height: 2.1em">Search a product</h1>
-            </div>
-        </div>
-        <div class="col-sm-3">
-        </div>
-        <div class="col rounded shadow">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="img-fluid bi-search m-2" viewBox="0 0 16 16">
-                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
-            </svg>
-            <h1 class="display-4">Search a product</h1>
-        </div>
-        <div class="col-sm-1">
-        </div>
-    </div>
-</div>

@@ -14,7 +14,7 @@
             </div>
             <div class="col-sm-6">
                 <p>Username or Email</p>
-                <input type="text" class="form-control" asp-for="UsernameEmail"/>
+                <input type="text" class="form-control" asp-for="UsernameEmail" />
             </div>
         </div>
         <div class="row mt-2">
@@ -22,7 +22,7 @@
             </div>
             <div class="col-sm-6">
                 <p>Password</p>
-                <input type="password" class="form-control" asp-for="Password"/>
+                <input type="password" class="form-control" asp-for="Password" />
             </div>
         </div>
         <div class="row mt-4">
@@ -40,5 +40,10 @@
             </div>
         </div>
     </div>
-
+    @if (!string.IsNullOrEmpty(Model.ErrorText))
+    {
+        <div class="alert alert-danger">
+            <p>@Model.ErrorText</p>
+        </div>
+    }
 </form>
