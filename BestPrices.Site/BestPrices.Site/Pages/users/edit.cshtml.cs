@@ -9,46 +9,50 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace BestPrices.Site.Pages.users
 {
-    public class changepasswordModel : PageModel
+    public class editModel : PageModel
     {
         private readonly PriceDbContext _context;
-        public changepasswordModel(PriceDbContext context)
+        public editModel(PriceDbContext context)
         {
             _context = context;
         }
-
         [BindProperty]
-        public string OldPassword { get; set; }
+        public string Username { get; set; }
         [BindProperty]
-        public string NewPassword { get; set; }
-        [BindProperty]
-        public string newConfirmedPassword { get; set; }
+        public string Email { get; set; }
         [BindProperty]
         public string ErrorText { get; set; }
-        public User User { get; set; } 
+        public User User { get; set; }
         public async Task<IActionResult> OnGetAsync()
         {
             User = CookiesManager.GetUserByCookies(HttpContext.Request, _context);
+            var u = User.Username;
+            Username = u;
+            var e = User.Email;
+            Email = e;
             return Page();
         }
         public async Task<IActionResult> OnPostAsync()
         {
-            string encOldPassword = PasswordManager.EncodePasswordToBase64(OldPassword);
-
             User = CookiesManager.GetUserByCookies(HttpContext.Request, _context);
-            if (User.Password != encOldPassword)
+            if (User.Username != Username)
             {
-                ErrorText = "Old password wrong";
-                return Page();
+                if (_context.Users.Select(x => x.Username).Contains(Username))
+                {
+                    ErrorText = "Username is already taken";
+                    return Page();
+                }
+                User.Username = Username;
             }
-            string encNewPassword = PasswordManager.EncodePasswordToBase64(NewPassword);
-            string encConfirmedPassword = PasswordManager.EncodePasswordToBase64(newConfirmedPassword);
-            if (encNewPassword != encConfirmedPassword)
+            if(User.Email != Email)
             {
-                ErrorText = "Passwords doesn't match";
-                return Page();
+                if (_context.Users.Select(x => x.Email).Contains(Email))
+                {
+                    ErrorText = "Email is already used";
+                    return Page();
+                }
+                User.Email = Email;
             }
-            _context.Users.SingleOrDefault(x => x.Id == User.Id).Password = encNewPassword;
             _context.SaveChanges();
             ErrorText = string.Empty;
             return RedirectToPage("/users/Index");

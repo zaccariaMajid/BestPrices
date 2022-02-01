@@ -234,3 +234,4 @@ C:\Users\bissola.17117\Documents\GitHub\BestPrices\BestPrices.Site\BestPrices.Si
 C:\Users\bissola.17117\Documents\GitHub\BestPrices\BestPrices.Site\BestPrices.Site\obj\Debug\net5.0\Razor\Pages\users\changepassword.cshtml.g.cs
 C:\Users\bissola.17117\Documents\GitHub\BestPrices\BestPrices.Site\BestPrices.Site\obj\Debug\net5.0\Razor\Pages\users\Index.cshtml.g.cs
 C:\Users\bissola.17117\Documents\GitHub\BestPrices\BestPrices.Site\BestPrices.Site\obj\Debug\net5.0\Razor\Pages\users\register.cshtml.g.cs
+C:\Users\giuggioli.17210\Documents\GitHub\BestPrices\BestPrices.Site\BestPrices.Site\obj\Debug\net5.0\Razor\Pages\users\edit.cshtml.g.cs

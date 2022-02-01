@@ -63,9 +63,9 @@ namespace BestPrices.Site.Pages.Users
 
             var cookies = Response.Cookies;
             var options = CookiesManager.CookieOptions;
-            var index = CookiesManager.UserIdKey;
-            cookies.Delete(index);
-            cookies.Append(index, newUser.Id, options);
+            var key = CookiesManager.UserIdKey;
+            cookies.Delete(key);
+            cookies.Append(key, newUser.Id, options);
             _context.SaveChanges();
             ErrorText = string.Empty;
             return RedirectToPage("/users/Index");

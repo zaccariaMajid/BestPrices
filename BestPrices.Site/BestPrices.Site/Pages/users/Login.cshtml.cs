@@ -40,6 +40,7 @@ namespace BestPrices.Site.Pages.Users
             var options = new Microsoft.AspNetCore.Http.CookieOptions() { Expires = DateTime.Now.AddDays(30), 
                 IsEssential = true, Secure = true };
             var key = CookiesManager.UserIdKey;
+            cookies.Delete(key);
             cookies.Append(key, user.Id, options);
             return RedirectToPage("/users/Index");
         }
