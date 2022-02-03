@@ -9,25 +9,14 @@ namespace Web_Scraping
     {
         [Key, Required]
         public string Id { get; set; }
-
         [Required]
         public string Name { get; set; }
-
-        [Required]
-        public string Description { get; set; }
-
         [Required]
         public decimal Price { get; set; }
-
         [Required]
         public string PathPhoto { get; set; }
-
         [Required]
         public string Link { get; set; }
-
-        [Required]
-        public DateTime Date { get; set; }
-
         [Required]
         public string IdEcommerce { get; set; }
     }

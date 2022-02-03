@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
@@ -25,20 +27,15 @@ namespace Web_Scraping
             List<string> lista = new List<string>();
             foreach (WebElement a in element)
             {
-                try
-                {
-                    asd.Name = a.FindElement(By.ClassName("a-size-large")).Text;
-                    asd.Description = a.FindElement(By.ClassName("a-unordered-list a-vertical a-spacing-mini")).Text;
+               
+                    asd.Name = a.FindElement(By.ClassName("a-size-base-plus")).Text;
                     asd.Price = decimal.Parse(a.FindElement(By.ClassName("a-price-whole")).Text);
-                    asd.Price = decimal.Parse(a.FindElement(By.ClassName("a-price-fraction")).Text);
-                    asd.Date = DateTime.Parse(a.FindElement(By.ClassName("a-text-bold")).Text);
-                    asd.PathPhoto = a.FindElement(By.ClassName("https://m.media-amazon.com/images/I/71iHRMQFUFL._AC_UL320_.jpg")).Text;
+                    asd.PathPhoto = driver.FindElement(By.ClassName("s-image")).GetAttribute("src");
+                    driver.FindElement(By.ClassName("a-size-base-plus")).Click();
+                    asd.Link = driver.Url;
+                    driver.Navigate().Back();
                     listaprodotti.Add(asd);
-                }
-                catch
-                {
-
-                }
+               
             }
 
             driver.Url = "https://www.ebay.it/";
@@ -51,7 +48,7 @@ namespace Web_Scraping
             {
                 try
                 {
-                    lista.Add(a.FindElement(By.ClassName("s-item__title")).Text + "\n" + a.FindElement(By.ClassName("s-item__price")).Text + "\n-------------------------------------------------------------------------------------------\n");
+
                 }
                 catch { }
             }
@@ -77,4 +74,3 @@ namespace Web_Scraping
 
     }
 }
-    
