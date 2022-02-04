@@ -29,7 +29,7 @@ namespace Web_Scraping
             {
                
                     asd.Name = a.FindElement(By.ClassName("a-size-base-plus")).Text;
-                    asd.Price = decimal.Parse(a.FindElement(By.ClassName("a-price-whole")).Text);
+                    asd.Price = decimal.Parse(a.FindElement(By.ClassName("a-price-whole")).Text) + a.FindElement(By.ClassName("a-price-symbol")).Text;
                     asd.PathPhoto = driver.FindElement(By.ClassName("s-image")).GetAttribute("src");
                     driver.FindElement(By.ClassName("a-size-base-plus")).Click();
                     asd.Link = driver.Url;
