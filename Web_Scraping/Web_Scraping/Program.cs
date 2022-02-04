@@ -27,15 +27,19 @@ namespace Web_Scraping
             List<string> lista = new List<string>();
             foreach (WebElement a in element)
             {
-               
+                try
+                {
                     asd.Name = a.FindElement(By.ClassName("a-size-base-plus")).Text;
                     asd.Price = decimal.Parse(a.FindElement(By.ClassName("a-price-whole")).Text) + a.FindElement(By.ClassName("a-price-symbol")).Text;
                     asd.PathPhoto = driver.FindElement(By.ClassName("s-image")).GetAttribute("src");
-                    driver.FindElement(By.ClassName("a-size-base-plus")).Click();
-                    asd.Link = driver.Url;
-                    driver.Navigate().Back();
+                    asd.Link = driver.FindElement(By.ClassName("a-link-normal")).GetAttribute("href");
                     listaprodotti.Add(asd);
-               
+                }
+                catch
+                {
+
+                }
+                   
             }
 
             driver.Url = "https://www.ebay.it/";
@@ -43,7 +47,7 @@ namespace Web_Scraping
             driver.FindElement(By.XPath("/html/body/div[5]/div[1]/div[2]/div[2]/div[2]/button[2]")).Click();
             driver.FindElement(By.XPath("/html/body/header/table/tbody/tr/td[3]/form/table/tbody/tr/td[1]/div[1]/div/input[1]")).SendKeys("palla da basket");
             driver.FindElement(By.XPath("/html/body/header/table/tbody/tr/td[3]/form/table/tbody/tr/td[3]/input")).Click();
-            element = driver.FindElements(By.ClassName("s-item"));
+            //element = driver.FindElements(By.ClassName("s-item"));
             foreach (WebElement a in element)
             {
                 try
