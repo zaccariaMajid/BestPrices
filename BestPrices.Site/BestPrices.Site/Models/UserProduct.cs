@@ -19,5 +19,7 @@ namespace BestPrices.Site.Models
 
         [Required]
         public bool IsFavourite { get; set; }
+        [Required]
+        public DateTime Date { get; set; }
     }
 }

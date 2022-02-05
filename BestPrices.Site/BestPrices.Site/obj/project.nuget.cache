@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "s9ITxCRRUaixO2npb2pr1eo4nbRIlIO+DKFN2bvzKFMOEXvqsensv2tPR/trTp+pOXQU4BCHM4nctJEarEYiow==",
+  "dgSpecHash": "RRDjYDhbJNsPcYtqKW2B48w3OuRomMN1YPKvJ+muOo655K9d5qBvG8glOQbUyPscKiL2bF5T7k0ZkkrqLZ6xbA==",
   "success": true,
   "projectFilePath": "C:\\Users\\giuggioli.17210\\Documents\\GitHub\\BestPrices\\BestPrices.Site\\BestPrices.Site\\BestPrices.Site.csproj",
   "expectedPackageFiles": [
@@ -27,6 +27,7 @@
     "C:\\Users\\giuggioli.17210\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\5.0.0\\microsoft.extensions.logging.abstractions.5.0.0.nupkg.sha512",
     "C:\\Users\\giuggioli.17210\\.nuget\\packages\\microsoft.extensions.options\\5.0.0\\microsoft.extensions.options.5.0.0.nupkg.sha512",
     "C:\\Users\\giuggioli.17210\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.1\\microsoft.extensions.primitives.5.0.1.nupkg.sha512",
+    "C:\\Users\\giuggioli.17210\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
     "C:\\Users\\giuggioli.17210\\.nuget\\packages\\sqlitepclraw.bundle_e_sqlite3\\2.0.4\\sqlitepclraw.bundle_e_sqlite3.2.0.4.nupkg.sha512",
     "C:\\Users\\giuggioli.17210\\.nuget\\packages\\sqlitepclraw.core\\2.0.4\\sqlitepclraw.core.2.0.4.nupkg.sha512",
     "C:\\Users\\giuggioli.17210\\.nuget\\packages\\sqlitepclraw.lib.e_sqlite3\\2.0.4\\sqlitepclraw.lib.e_sqlite3.2.0.4.nupkg.sha512",

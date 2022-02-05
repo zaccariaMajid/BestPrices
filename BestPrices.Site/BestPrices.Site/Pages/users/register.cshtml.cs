@@ -48,7 +48,7 @@ namespace BestPrices.Site.Pages.Users
             string encConfirmedPassword = PasswordManager.EncodePasswordToBase64(ConfirmedPassword);
             if (encPassword != encConfirmedPassword)
             {
-                ErrorText = "Passwords doesn't match";
+                ErrorText = "Passwords don't match";
                 return Page();
             }
                 

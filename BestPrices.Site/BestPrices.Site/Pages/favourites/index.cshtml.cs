@@ -36,8 +36,7 @@ namespace BestPrices.Site.Pages.favourites
         }
         public string GetEcommerceById(string id)
         {
-            return "Amazon";
-            //return _context.Sites.SingleOrDefault(x => x.Id == id).Name;
+            return _context.Ecommerces.SingleOrDefault(x => x.Id == id).Name;
         }
     }
 }

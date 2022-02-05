@@ -11,12 +11,11 @@ namespace BestPrices.Site.Data
     {
         public PriceDbContext(DbContextOptions options) : base(options)
         { 
-
         }
 
         public DbSet<Product> Products { get; set; }
         public DbSet<User> Users { get; set; }
-        public DbSet<Ecommerce> Sites { get; set; }
+        public DbSet<Ecommerce> Ecommerces { get; set; }
         public DbSet<UserProduct> UsersProducts { get; set; }
     }
 }

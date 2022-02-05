@@ -3,14 +3,16 @@ using System;
 using BestPrices.Site.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace BestPrices.Site.Migrations
 {
     [DbContext(typeof(PriceDbContext))]
-    partial class PriceDbContextModelSnapshot : ModelSnapshot
+    [Migration("20220205073745_modifies")]
+    partial class modifies
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -31,12 +33,15 @@ namespace BestPrices.Site.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Ecommerces");
+                    b.ToTable("Sites");
                 });
 
             modelBuilder.Entity("BestPrices.Site.Models.Product", b =>
                 {
                     b.Property<string>("Id")
+                        .HasColumnType("TEXT");
+
+                    b.Property<DateTime>("Date")
                         .HasColumnType("TEXT");
 
                     b.Property<string>("IdEcommerce")
@@ -89,9 +94,6 @@ namespace BestPrices.Site.Migrations
             modelBuilder.Entity("BestPrices.Site.Models.UserProduct", b =>
                 {
                     b.Property<string>("Id")
-                        .HasColumnType("TEXT");
-
-                    b.Property<DateTime>("Date")
                         .HasColumnType("TEXT");
 
                     b.Property<string>("IdProduct")

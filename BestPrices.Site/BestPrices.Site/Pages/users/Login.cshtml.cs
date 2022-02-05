@@ -33,7 +33,7 @@ namespace BestPrices.Site.Pages.Users
             User user = _context.Users.SingleOrDefault(x => (x.Username == UsernameEmail || x.Email == UsernameEmail) && x.Password == encPassword);
             if(user == null)
             {
-                ErrorText = "Usernme/email or password wrong";
+                ErrorText = "Username/email or password wrong";
                 return Page();
             }
             var cookies = HttpContext.Response.Cookies;

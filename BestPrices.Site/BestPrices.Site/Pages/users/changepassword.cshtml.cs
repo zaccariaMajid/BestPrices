@@ -33,6 +33,13 @@ namespace BestPrices.Site.Pages.users
         }
         public async Task<IActionResult> OnPostAsync()
         {
+            if(string.IsNullOrEmpty(OldPassword) ||
+                string.IsNullOrEmpty(NewPassword) ||
+                string.IsNullOrEmpty(newConfirmedPassword))
+            {
+                ErrorText = "Empty fields in the form";
+                return Page();
+            }
             string encOldPassword = PasswordManager.EncodePasswordToBase64(OldPassword);
 
             User = CookiesManager.GetUserByCookies(HttpContext.Request, _context);
