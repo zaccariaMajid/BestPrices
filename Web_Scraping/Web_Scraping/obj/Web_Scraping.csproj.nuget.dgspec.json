@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\mbiss\\OneDrive\\Documenti\\GitHub\\BestPrices\\Web_Scraping\\Web_Scraping\\Web_Scraping.csproj": {}
+    "C:\\Users\\user\\Documents\\GitHub\\BestPrices\\Web_Scraping\\Web_Scraping\\Web_Scraping.csproj": {}
   },
   "projects": {
-    "C:\\Users\\mbiss\\OneDrive\\Documenti\\GitHub\\BestPrices\\Web_Scraping\\Web_Scraping\\Web_Scraping.csproj": {
+    "C:\\Users\\user\\Documents\\GitHub\\BestPrices\\Web_Scraping\\Web_Scraping\\Web_Scraping.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mbiss\\OneDrive\\Documenti\\GitHub\\BestPrices\\Web_Scraping\\Web_Scraping\\Web_Scraping.csproj",
+        "projectUniqueName": "C:\\Users\\user\\Documents\\GitHub\\BestPrices\\Web_Scraping\\Web_Scraping\\Web_Scraping.csproj",
         "projectName": "Web_Scraping",
-        "projectPath": "C:\\Users\\mbiss\\OneDrive\\Documenti\\GitHub\\BestPrices\\Web_Scraping\\Web_Scraping\\Web_Scraping.csproj",
-        "packagesPath": "C:\\Users\\mbiss\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mbiss\\OneDrive\\Documenti\\GitHub\\BestPrices\\Web_Scraping\\Web_Scraping\\obj\\",
+        "projectPath": "C:\\Users\\user\\Documents\\GitHub\\BestPrices\\Web_Scraping\\Web_Scraping\\Web_Scraping.csproj",
+        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\user\\Documents\\GitHub\\BestPrices\\Web_Scraping\\Web_Scraping\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\mbiss\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -64,7 +64,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
         }
       }
     }

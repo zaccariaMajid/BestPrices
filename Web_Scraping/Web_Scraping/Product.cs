@@ -16,8 +16,6 @@ namespace Web_Scraping
         [Required]
         public string PathPhoto { get; set; }
         [Required]
-        public string Link { get; set; }
-        [Required]
         public string IdEcommerce { get; set; }
     }
 }
