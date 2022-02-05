@@ -108,19 +108,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\user\\.nuget\\packages\\": {}
+    "C:\\Users\\sonzogni.17133.PALEOCAPA\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\user\\Documents\\GitHub\\BestPrices\\Web_Scraping\\Web_Scraping\\Web_Scraping.csproj",
+      "projectUniqueName": "C:\\Users\\sonzogni.17133.PALEOCAPA\\Documents\\GitHub\\BestPrices\\Web_Scraping\\Web_Scraping\\Web_Scraping.csproj",
       "projectName": "Web_Scraping",
-      "projectPath": "C:\\Users\\user\\Documents\\GitHub\\BestPrices\\Web_Scraping\\Web_Scraping\\Web_Scraping.csproj",
-      "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\user\\Documents\\GitHub\\BestPrices\\Web_Scraping\\Web_Scraping\\obj\\",
+      "projectPath": "C:\\Users\\sonzogni.17133.PALEOCAPA\\Documents\\GitHub\\BestPrices\\Web_Scraping\\Web_Scraping\\Web_Scraping.csproj",
+      "packagesPath": "C:\\Users\\sonzogni.17133.PALEOCAPA\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\sonzogni.17133.PALEOCAPA\\Documents\\GitHub\\BestPrices\\Web_Scraping\\Web_Scraping\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\sonzogni.17133.PALEOCAPA\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -165,12 +169,18 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.NETCore.App.Host.win-x64",
+            "version": "[3.1.13, 3.1.13]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.104\\RuntimeIdentifierGraph.json"
       }
     }
   }
