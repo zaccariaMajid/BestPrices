@@ -25,25 +25,25 @@ namespace BestPrices.Site.Api
             //    jsonString = reader.ReadToEnd();
             //return ToApiResult(JsonConvert.DeserializeObject<Result>(jsonString)).Data.ToList();
 
-            return new List<Product>();
-            //{
-            //    new Product()
-            //    {
-            //        Name = "Pallone",
-            //        Price = "€20.00",
-            //        PathPhoto = "/img/prova.jpg",
-            //        Link = "https://docs.microsoft.com/it-it/aspnet/core/security/gdpr?view=aspnetcore-5.0",
-            //        IdEcommerce = "A"
-            //    },
-            //    new Product()
-            //    {
-            //        Name = "Casa",
-            //        Price = "€200.00",
-            //        PathPhoto = "http://www.starcoppe.it/images/grafica-immagine-b.jpg",
-            //        Link = "https://docs.microsoft.com/it-it/aspnet/core/security/gdpr?view=aspnetcore-5.0",
-            //        IdEcommerce = "B"
-            //    },
-            //};
+            return new List<Product>()
+            {
+                new Product()
+                {
+                    Name = "Pallone",
+                    Price = "€20.00",
+                    PathPhoto = "/img/prova.jpg",
+                    Link = "https://docs.microsoft.com/it-it/aspnet/core/security/gdpr?view=aspnetcore-5.0",
+                    IdEcommerce = "A"
+                },
+                new Product()
+                {
+                    Name = "Casa",
+                    Price = "€200.00",
+                    PathPhoto = "http://www.starcoppe.it/images/grafica-immagine-b.jpg",
+                    Link = "https://docs.microsoft.com/it-it/aspnet/core/security/gdpr?view=aspnetcore-5.0",
+                    IdEcommerce = "B"
+                }
+            };
         }
 
         ApiResult ToApiResult(Result input)

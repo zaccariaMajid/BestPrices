@@ -24,10 +24,11 @@ namespace BestPrices.Site.Pages.favourites
             User = CookiesManager.GetUserByCookies(HttpContext.Request, _context);
             if (User != null)
             {
-                IList<string> IdProducts = _context.UsersProducts.Where(x => x.IdUser == User.Id && x.IsFavourite == true)
-                                                                 .ToList()
-                                                                 .Select(y => y.IdProduct)
-                                                                 .ToList();
+                var userProducts = _context.UsersProducts.OrderByDescending(x => x.Date).ToList();
+                IList<string> IdProducts = userProducts.Where(x => x.IdUser == User.Id && x.IsFavourite)
+                                                       .ToList()
+                                                       .Select(y => y.IdProduct)
+                                                       .ToList();
                 Products = _context.Products.Where(x => IdProducts.Contains(x.Id))
                                             .ToList();
             }

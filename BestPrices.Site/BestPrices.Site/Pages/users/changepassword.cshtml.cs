@@ -25,6 +25,7 @@ namespace BestPrices.Site.Pages.users
         public string newConfirmedPassword { get; set; }
         [BindProperty]
         public string ErrorText { get; set; }
+        [BindProperty]
         public User User { get; set; } 
         public async Task<IActionResult> OnGetAsync()
         {

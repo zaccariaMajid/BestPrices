@@ -25,28 +25,33 @@ else
                 {
                     <div class="row mt-5 rounded shadow">
                         <div class="col-sm-4">
-                            <img src="@product.PathPhoto" alt="prova img" class="img-fluid mt-2 mb-3">
+                            <img src="@Url.Content(product.PathPhoto)" alt="prova img" class="img-fluid mt-2 mb-3" width="270" height="190">
+                        </div>
+                        <div class="col-sm-1">
                         </div>
                         <div class="col-sm">
-                            <div class="row ml-5">
+                            <div class="row">
                                 <div class="col">
                                     <h3 class="display-4">@product.Name</h3>
                                 </div>
                                 <div class="col text-right mt-2 mr-3">
-                                    <span class="float-right"><i class="bi bi-heart" style="font-size: 2.3em; "></i></span>
+                                    <span class="float-right"><i class="bi bi-heart-fill" style="font-size: 2.3em; "></i></span>
                                 </div>
                             </div>
                             <br />
                             <div class="row">
-                                <div class="col-sm ml-5">
-                                    <h3>€@product.Price</h3>
+                                <div class="col">
+                                    <h3>@product.Price</h3>
                                 </div>
-                                <div class="col-sm text-center">
-                                    <a class="btn btn-outline-primary" href="@product.Link" target="_blank">Buy now</a>
+                                <div class="col text-right mb-5 mr-3">
+                                    <a class="btn btn-outline-primary float-right" href="@product.Link" target="_blank"><i class="bi bi-cart3"></i> Buy now</a>
                                 </div>
                             </div>
-                            <br /><br />
-                            <p class="ml-5">Ecommerce: <b>@Model.GetEcommerceById(product.IdEcommerce)</b></p>
+                            <div class="row">
+                                <div class="col">
+                                    <p>Ecommerce: <b>@Model.GetEcommerceById(product.IdEcommerce)</b></p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 }
