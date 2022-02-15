@@ -1,12 +1,14 @@
 ﻿using API_pcto.Interfaces;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Threading.Tasks;
 
 namespace API_pcto.Controllers
 {
-    [Route("api/prodotti")]
+    [Authorize(AuthenticationSchemes = Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerDefaults.AuthenticationScheme)]
     [ApiController]
+    [Route("[controller]")]
     public class ProductsController : ControllerBase
     {
         

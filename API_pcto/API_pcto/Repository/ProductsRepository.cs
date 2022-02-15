@@ -15,6 +15,7 @@ namespace API_pcto
 {
     public class ProductsRepository : IProductsRepository
     {
+
         public List<Prodotto> nuovoProdotto(string nomeProdottoDaCercare)
         {
             ChromeOptions options = new ChromeOptions();
@@ -99,7 +100,6 @@ namespace API_pcto
 
             //Prodotto createdProduct = default(Prodotto);
             //int rows = 0;
-
             foreach (var newProduct in prodotti)
             {
                 var query = "INSERT INTO prodotto(id, name, price, link, pathPhoto, idEcommerce) VALUES (@IdProdotto, @Name, @Price, @Link, @PathPhoto, @IdEcommerce);";
