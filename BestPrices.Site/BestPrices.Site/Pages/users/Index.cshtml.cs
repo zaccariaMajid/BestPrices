@@ -24,7 +24,8 @@ namespace BestPrices.Site.Pages.users
         public async Task<IActionResult> OnGetAsync()
         {
             User = CookiesManager.GetUserByCookies(HttpContext.Request, _context);
-            FavCount = _context.UsersProducts.Where(x => x.IdUser == User.Id && x.IsFavourite)
+            if(User!= null)
+                FavCount = _context.UsersProducts.Where(x => x.IdUser == User.Id && x.IsFavourite)
                                              .ToList()
                                              .Count;
             return Page();

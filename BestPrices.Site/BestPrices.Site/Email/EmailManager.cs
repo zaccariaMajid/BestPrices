@@ -6,27 +6,42 @@ using MimeKit;
 using MailKit.Net.Smtp;
 using MailKit.Net.Pop3;
 using MailKit.Security;
+using MailKit;
 
-namespace BestPrices.Site
+namespace BestPrices.Site.Email
 {
     public class EmailManager
     {
-        public async Task SendEmail(EmailComponents components, EmailCredentials credentials)
+        public async Task<bool> SendEmail(EmailComponents components, EmailCredentials credentials)
         {
             var msg = new MimeMessage();
             msg.From.Add(new MailboxAddress(components.NameSender, components.Sender));
-            msg.To.Add(new MailboxAddress(components.NameRecipient, components.Recipient));
+            msg.To.Add(MailboxAddress.Parse(components.Recipient));
             msg.Subject = components.Subject;
-            msg.Body = new TextPart()
+            msg.Body = new TextPart("plain")
             {
                 Text = components.Body
             };
+
             using (var client = new SmtpClient())
             {
-                await client.ConnectAsync("smtp.gmail.com", 587, SecureSocketOptions.Auto);
-                await client.AuthenticateAsync(credentials.Username, credentials.Password);
-                await client.SendAsync(msg);
-                await client.DisconnectAsync(true);
+                bool toReturn;
+                try
+                {
+                    await client.ConnectAsync("smtp.gmail.com", 465, true);
+                    await client.AuthenticateAsync(credentials.Username, credentials.Password);
+                    await client.SendAsync(msg);
+                    toReturn = true;
+                }
+                catch (Exception)
+                {
+                    toReturn = false;
+                }
+                finally
+                {
+                    await client.DisconnectAsync(true);
+                }
+                return toReturn;
             }
         }
         //public static void SendEmail(EmailComponents components)
@@ -63,7 +78,6 @@ namespace BestPrices.Site
     {
         public string NameSender { get; set; }
         public string Sender { get; set; }
-        public string NameRecipient { get; set; }
         public string Recipient { get; set; }
         public string Subject { get; set; }
         public string Body { get; set; }

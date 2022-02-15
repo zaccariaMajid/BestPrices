@@ -6,6 +6,7 @@ using BestPrices.Site.Data;
 using BestPrices.Site.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using BestPrices.Site.Email;
 
 namespace BestPrices.Site.Pages.Users
 {
@@ -60,6 +61,17 @@ namespace BestPrices.Site.Pages.Users
                 Username = username
             };
             _context.Users.Add(newUser);
+
+            var emailmanager = new EmailManager();
+            var emailComponents = new EmailComponents
+            {
+                NameSender = Components.NameSender,
+                Sender = Components.Sender,
+                Recipient = email,
+                Subject = Components.Subject,
+                Body = Components.Body
+            };
+            bool IsSended = await emailmanager.SendEmail(emailComponents, Credentials.EmailCredentials);
 
             var cookies = Response.Cookies;
             var options = CookiesManager.CookieOptions;
