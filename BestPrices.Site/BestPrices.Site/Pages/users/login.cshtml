@@ -1,0 +1,49 @@
+﻿@page
+@model BestPrices.Site.Pages.Users.LoginModel
+@{
+    ViewData["Title"] = "Log in";
+}
+<div class="text-center">
+    <h1 class="display-4">@ViewData["Title"]</h1>
+</div>
+
+<form method="post">
+    <div class="text-sm-center mt-5">
+        <div class="row mt-2">
+            <div class="col-sm-3">
+            </div>
+            <div class="col-sm-6">
+                <p>Username or Email</p>
+                <input type="text" class="form-control" asp-for="UsernameEmail" />
+            </div>
+        </div>
+        <div class="row mt-2">
+            <div class="col-sm-3">
+            </div>
+            <div class="col-sm-6">
+                <p>Password</p>
+                <input type="password" class="form-control" asp-for="Password" />
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-sm-3">
+            </div>
+            <div class="col-sm-6">
+                <input type="submit" class="btn btn-block btn-primary" value="Log in" />
+            </div>
+        </div>
+        <div class="row mt-2">
+            <div class="col-sm-3">
+            </div>
+            <div class="col-sm-6">
+                <label>Are you a new user? <a asp-page="/users/register">Register</a></label>
+            </div>
+        </div>
+    </div>
+    @if (!string.IsNullOrEmpty(Model.ErrorText))
+    {
+        <div class="alert alert-danger text-center">
+            <p>@Model.ErrorText</p>
+        </div>
+    }
+</form>

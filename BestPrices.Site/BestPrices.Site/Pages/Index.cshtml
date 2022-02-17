@@ -1,0 +1,83 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+@if (Model.User != null)
+{
+    <div class="text-center">
+        <h1 class="display-4">Welcome @Model.User.Username</h1>
+    </div>
+}
+else
+{
+    <div class="text-center">
+        <h1 class="display-4">Welcome on BestPrices</h1>
+    </div>
+}
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-sm-1">
+        </div>
+        <div class="col rounded shadow m-3">
+            <div class="m-2">
+                <img src="~/img/search2.png" class="img-fluid bi-search" />
+            </div>
+            <div class="text-center mb-3">
+                <p>Discover the cheapest product you are looking for</p>
+                <h1 class="display-4 mb-4">Search</h1>
+                <a href="/search/" class="btn btn-outline-primary"><i class="bi bi-search"></i> Search now</a>
+            </div>
+        </div>
+        @if (Model.User != null)
+        {
+            <div class="col rounded shadow m-3">
+                <div class="m-2">
+                    <img src="~/img/history1.png" class="img-fluid bi-search" />
+                </div>
+                <div class="text-center mb-3">
+                    <p>Find products you have recently searched</p>
+                    <h1 class="display-4 mb-4">History</h1>
+                    <a href="/history/" class="btn btn-outline-primary"><i class="bi bi-clock-history"></i> View history</a>
+                </div>
+            </div>
+            <div class="col rounded shadow m-3">
+                <div class="m-2">
+                    <img src="~/img/history1.png" class="img-fluid bi-search" />
+                </div>
+                <div class="text-center mb-3">
+                    <p>Monitor products you are interested in</p>
+                    <h1 class="display-4 mb-4">Favourites</h1>
+                    <a href="/history/" class="btn btn-outline-primary"><i class="bi bi-heart"></i> View favourites</a>
+                </div>
+            </div>
+        }
+        else
+        {
+            <div class="col rounded shadow m-3">
+                <div class="m-2">
+                    <img src="~/img//login1cp.jpg" class="img-fluid bi-search" />
+                </div>
+                <div class="text-center mb-3">
+                    <p>Become a user for more exclusive utilities</p>
+                    <h1 class="display-4 mb-4">Register</h1>
+                    <a href="/users/register" class="btn btn-outline-primary"><i class="bi bi-list"></i> Register now</a>
+                </div>
+            </div>
+            <div class="col rounded shadow m-3">
+                <div class="m-2">
+                    <img src="~/img/login2cp.png" class="img-fluid bi-search" />
+                </div>
+                <div class="text-center mb-3">
+                    <p>Recover your account for extra functions</p>
+                    <h1 class="display-4 mb-4">Login</h1>
+                    <a href="/users/login" class="btn btn-outline-primary"><i class="bi bi-box-arrow-in-right"></i> Log in</a>
+                </div>
+            </div>
+
+        }
+        <div class="col-sm-1">
+        </div>
+    </div>
+</div>
