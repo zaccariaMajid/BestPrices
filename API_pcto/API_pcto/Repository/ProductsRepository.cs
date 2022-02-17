@@ -50,29 +50,29 @@ namespace API_pcto
                 }
             }
 
-            driver.Url = "https://www.ebay.it/";
-            Thread.Sleep(1000);
-            driver.FindElement(By.XPath("/html/body/header/table/tbody/tr/td[3]/form/table/tbody/tr/td[1]/div[1]/div/input[1]")).SendKeys(nomeProdottoDaCercare);
-            driver.FindElement(By.XPath("/html/body/header/table/tbody/tr/td[3]/form/table/tbody/tr/td[3]/input")).Click();
-            element = driver.FindElements(By.ClassName("s-item"));
-            foreach (WebElement ele in element)
-            {
-                try
-                {
-                    Prodotto product = new Prodotto();
-                    //productForCreation product = new productForCreation();
-                    product.Name = ele.FindElement(By.ClassName("s-item__title")).Text;
-                    product.Price = ele.FindElement(By.ClassName("s-item__price")).Text.Split(" ")[1];
-                    product.PathPhoto = ele.FindElement(By.ClassName("s-item__image-img")).GetAttribute("src");
-                    product.Link = ele.FindElement(By.ClassName("s-item__link")).GetAttribute("href");
-                    elencoProdotti.Add(product);
-                }
-                catch (Exception ex)
-                {
-                    Console.WriteLine(ex.Message);
-                }
+            //driver.Url = "https://www.ebay.it/";
+            //Thread.Sleep(1000);
+            //driver.FindElement(By.XPath("/html/body/header/table/tbody/tr/td[3]/form/table/tbody/tr/td[1]/div[1]/div/input[1]")).SendKeys(nomeProdottoDaCercare);
+            //driver.FindElement(By.XPath("/html/body/header/table/tbody/tr/td[3]/form/table/tbody/tr/td[3]/input")).Click();
+            //element = driver.FindElements(By.ClassName("s-item"));
+            //foreach (WebElement ele in element)
+            //{
+            //    try
+            //    {
+            //        Prodotto product = new Prodotto();
+            //        //productForCreation product = new productForCreation();
+            //        product.Name = ele.FindElement(By.ClassName("s-item__title")).Text;
+            //        product.Price = ele.FindElement(By.ClassName("s-item__price")).Text.Split(" ")[1];
+            //        product.PathPhoto = ele.FindElement(By.ClassName("s-item__image-img")).GetAttribute("src");
+            //        product.Link = ele.FindElement(By.ClassName("s-item__link")).GetAttribute("href");
+            //        elencoProdotti.Add(product);
+            //    }
+            //    catch (Exception ex)
+            //    {
+            //        Console.WriteLine(ex.Message);
+            //    }
 
-            }
+            //}
             return elencoProdotti;
         }
 

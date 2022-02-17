@@ -1,20 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\C#\\API_pcto\\API_pcto\\API_pcto.csproj": {}
+    "C:\\Users\\sonzogni.17133.PALEOCAPA\\Documents\\GitHub\\BestPrices\\API_pcto\\API_pcto\\API_pcto.csproj": {}
   },
   "projects": {
-    "D:\\C#\\API_pcto\\API_pcto\\API_pcto.csproj": {
+    "C:\\Users\\sonzogni.17133.PALEOCAPA\\Documents\\GitHub\\BestPrices\\API_pcto\\API_pcto\\API_pcto.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\C#\\API_pcto\\API_pcto\\API_pcto.csproj",
+        "projectUniqueName": "C:\\Users\\sonzogni.17133.PALEOCAPA\\Documents\\GitHub\\BestPrices\\API_pcto\\API_pcto\\API_pcto.csproj",
         "projectName": "API_pcto",
-        "projectPath": "D:\\C#\\API_pcto\\API_pcto\\API_pcto.csproj",
-        "packagesPath": "C:\\Users\\zacca\\.nuget\\packages\\",
-        "outputPath": "D:\\C#\\API_pcto\\API_pcto\\obj\\",
+        "projectPath": "C:\\Users\\sonzogni.17133.PALEOCAPA\\Documents\\GitHub\\BestPrices\\API_pcto\\API_pcto\\API_pcto.csproj",
+        "packagesPath": "C:\\Users\\sonzogni.17133.PALEOCAPA\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\sonzogni.17133.PALEOCAPA\\Documents\\GitHub\\BestPrices\\API_pcto\\API_pcto\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\zacca\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\sonzogni.17133.PALEOCAPA\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -101,7 +104,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.104\\RuntimeIdentifierGraph.json"
         }
       }
     }
