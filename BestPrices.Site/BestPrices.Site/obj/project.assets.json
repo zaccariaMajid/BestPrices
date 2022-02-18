@@ -1534,23 +1534,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\sonzogni.17133.PALEOCAPA\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\NbkHp\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\sonzogni.17133.PALEOCAPA\\Documents\\GitHub\\BestPrices\\BestPrices.Site\\BestPrices.Site\\BestPrices.Site.csproj",
+      "projectUniqueName": "C:\\Users\\NbkHp\\Documents\\GitHub\\BestPrices\\BestPrices.Site\\BestPrices.Site\\BestPrices.Site.csproj",
       "projectName": "BestPrices.Site",
-      "projectPath": "C:\\Users\\sonzogni.17133.PALEOCAPA\\Documents\\GitHub\\BestPrices\\BestPrices.Site\\BestPrices.Site\\BestPrices.Site.csproj",
-      "packagesPath": "C:\\Users\\sonzogni.17133.PALEOCAPA\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\sonzogni.17133.PALEOCAPA\\Documents\\GitHub\\BestPrices\\BestPrices.Site\\BestPrices.Site\\obj\\",
+      "projectPath": "C:\\Users\\NbkHp\\Documents\\GitHub\\BestPrices\\BestPrices.Site\\BestPrices.Site\\BestPrices.Site.csproj",
+      "packagesPath": "C:\\Users\\NbkHp\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\NbkHp\\Documents\\GitHub\\BestPrices\\BestPrices.Site\\BestPrices.Site\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\sonzogni.17133.PALEOCAPA\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\NbkHp\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1621,7 +1622,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.104\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   }
