@@ -33,8 +33,9 @@ namespace BestPrices.Site.Email
                     await client.SendAsync(msg);
                     toReturn = true;
                 }
-                catch (Exception)
+                catch (Exception ex)
                 {
+                    var error = ex.Message;
                     toReturn = false;
                 }
                 finally
