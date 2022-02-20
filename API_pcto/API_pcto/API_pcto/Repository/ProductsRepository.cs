@@ -45,7 +45,7 @@ namespace API_pcto
                     product.Price = decimal.Parse(ele.FindElement(By.ClassName("a-price-whole")).Text) + ele.FindElement(By.ClassName("a-price-symbol")).Text;
                     product.PathPhoto = ele.FindElement(By.ClassName("s-image")).GetAttribute("src");
                     product.Link = ele.FindElement(By.ClassName("a-link-normal")).GetAttribute("href");
-                    product.IdEcommerce = "a";
+                    product.IdEcommerce = "A";
                     elencoProdotti.Add(product);
                 }
                 catch (Exception ex)
@@ -70,7 +70,7 @@ namespace API_pcto
                     product.Price = ele.FindElement(By.ClassName("s-item__price")).Text.Split(" ")[1];
                     product.PathPhoto = ele.FindElement(By.ClassName("s-item__image-img")).GetAttribute("src");
                     product.Link = ele.FindElement(By.ClassName("s-item__link")).GetAttribute("href");
-                    product.IdEcommerce = "e";
+                    product.IdEcommerce = "B";
                     elencoProdotti.Add(product);
                 }
                 catch (Exception ex)
