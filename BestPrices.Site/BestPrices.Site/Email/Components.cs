@@ -7,9 +7,10 @@ namespace BestPrices.Site.Email
 {
     public static class Components
     {
-        public static string NameSender = "BestPricesDeveloper";
-        public static string Sender = "mattiabissola781@gmail.com";
+        public static string NameSender = "BestPrices Developer";
+        public static string Sender = "bestpricesitispaleocapa";
         public static string Subject = "Email verification";
-        public static string Body = "Click into the link to verify your email address and enable your account";
+        public static string User = "User";
+        public static string Body = $"Hi {User}, welcome on BestPrices!\nClick into the link to verify your email address and enable your account";
     }
 }

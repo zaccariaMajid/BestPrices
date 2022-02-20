@@ -12,7 +12,7 @@ namespace BestPrices.Site.Email
 {
     public class EmailManager
     {
-        public async Task<bool> SendEmail(EmailComponents components, EmailCredentials credentials)
+        public bool SendEmail(EmailComponents components, EmailCredentials credentials)
         {
             var msg = new MimeMessage();
             msg.From.Add(new MailboxAddress(components.NameSender, components.Sender));
@@ -28,9 +28,9 @@ namespace BestPrices.Site.Email
                 bool toReturn;
                 try
                 {
-                    await client.ConnectAsync("smtp.gmail.com", 465, true);
-                    await client.AuthenticateAsync(credentials.Username, credentials.Password);
-                    await client.SendAsync(msg);
+                    client.Connect("smtp.gmail.com", 465, true);
+                    client.Authenticate(credentials.Username, credentials.Password);
+                    client.Send(msg);
                     toReturn = true;
                 }
                 catch (Exception ex)
@@ -40,7 +40,7 @@ namespace BestPrices.Site.Email
                 }
                 finally
                 {
-                    await client.DisconnectAsync(true);
+                    client.Disconnect(true);
                 }
                 return toReturn;
             }

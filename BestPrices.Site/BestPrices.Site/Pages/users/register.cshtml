@@ -55,9 +55,23 @@
                 <label>Do you already have an account? <a asp-page="/users/login">Log in</a></label>
             </div>
         </div>
+
+        @if (Model.IsSended)
+        {
+            <div class="alert alert-success" role="alert">
+                Email sended successfully
+            </div>
+        }
+
+        else if(!Model.IsFirstOpen)
+        {
+            <div class="alert alert-danger" role="alert">
+                Something has gone wrong sending the email
+            </div>
+        }
         @if (!string.IsNullOrEmpty(Model.ErrorText))
         {
-            <div class="alert alert-danger">
+            <div class="alert alert-danger" role="alert">
                 <p>@Model.ErrorText</p>
             </div>
         }

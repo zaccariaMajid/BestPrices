@@ -407,3 +407,9 @@ C:\Users\NbkHp\Documents\GitHub\BestPrices\BestPrices.Site\BestPrices.Site\obj\D
 C:\Users\NbkHp\Documents\GitHub\BestPrices\BestPrices.Site\BestPrices.Site\obj\Debug\net5.0\ref\BestPrices.Site.dll
 C:\Users\NbkHp\Documents\GitHub\BestPrices\BestPrices.Site\BestPrices.Site\obj\Debug\net5.0\BestPrices.Site.pdb
 C:\Users\NbkHp\Documents\GitHub\BestPrices\BestPrices.Site\BestPrices.Site\obj\Debug\net5.0\BestPrices.Site.genruntimeconfig.cache
+C:\Users\giugg\source\repos\BestPrices\BestPrices.Site\BestPrices.Site\bin\Debug\net5.0\MailKit.dll
+C:\Users\giugg\source\repos\BestPrices\BestPrices.Site\BestPrices.Site\bin\Debug\net5.0\MimeKit.dll
+C:\Users\giugg\source\repos\BestPrices\BestPrices.Site\BestPrices.Site\bin\Debug\net5.0\Newtonsoft.Json.dll
+C:\Users\giugg\source\repos\BestPrices\BestPrices.Site\BestPrices.Site\bin\Debug\net5.0\BouncyCastle.Crypto.dll
+C:\Users\giugg\source\repos\BestPrices\BestPrices.Site\BestPrices.Site\obj\Debug\net5.0\Razor\Pages\users\changepassword.cshtml.g.cs
+C:\Users\giugg\source\repos\BestPrices\BestPrices.Site\BestPrices.Site\obj\Debug\net5.0\Razor\Pages\users\edit.cshtml.g.cs

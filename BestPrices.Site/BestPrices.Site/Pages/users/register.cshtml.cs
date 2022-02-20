@@ -27,6 +27,10 @@ namespace BestPrices.Site.Pages.Users
         public string username { get; set; }
         [BindProperty]
         public string ErrorText { get; set; }
+        [BindProperty]
+        public bool IsSended { get; set; }
+        [BindProperty]
+        public bool IsFirstOpen { get; set; } = true;
         public async Task<IActionResult> OnGetAsync()
         {
             return Page();
@@ -63,6 +67,7 @@ namespace BestPrices.Site.Pages.Users
             _context.Users.Add(newUser);
 
             var emailmanager = new EmailManager();
+            Components.User = username;
             var emailComponents = new EmailComponents
             {
                 NameSender = Components.NameSender,
@@ -71,7 +76,8 @@ namespace BestPrices.Site.Pages.Users
                 Subject = Components.Subject,
                 Body = Components.Body
             };
-            bool IsSended = await emailmanager.SendEmail(emailComponents, Credentials.EmailCredentials);
+            IsSended = emailmanager.SendEmail(emailComponents, Credentials.EmailCredentials);
+            IsFirstOpen = false;
 
             var cookies = Response.Cookies;
             var options = CookiesManager.CookieOptions;
@@ -80,7 +86,8 @@ namespace BestPrices.Site.Pages.Users
             cookies.Append(key, newUser.Id, options);
             _context.SaveChanges();
             ErrorText = string.Empty;
-            return RedirectToPage("/users/Index");
+            return Page();
+            //return RedirectToPage("/users/Index");
         }
     }
 }

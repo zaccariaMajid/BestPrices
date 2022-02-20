@@ -9,8 +9,8 @@ namespace BestPrices.Site.Email
     {
         public static EmailCredentials EmailCredentials = new EmailCredentials
         {
-            Username = "mattiabissola781@gmail.com",
-            Password = "Solzese2003"
+            Username = "bestpricesitispaleocapa",
+            Password = "20bestprice$22"
         };
     }
 }
