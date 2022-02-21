@@ -61,7 +61,8 @@ namespace BestPrices.Site.Api
             //using (Stream stream = response.GetResponseStream())
             //using (StreamReader reader = new StreamReader(stream))
             //    jsonString = reader.ReadToEnd();
-            return ToApiResult(JsonConvert.DeserializeObject<Result>(result)).Data.ToList();
+            var k = JsonConvert.DeserializeObject<IList<Results>>(result);
+            return ToApiResult(new Result() { Results = k.ToArray() }).Data.ToList();
 
             //return new List<Product>()
             //{
@@ -87,15 +88,21 @@ namespace BestPrices.Site.Api
         ApiResult ToApiResult(Result input)
         {
             var result = new ApiResult();
-            result.Data = input.Results.Select(x => new Product()
+            var list = input.Results.Select(x => new Product()
             {
-                Id = Guid.NewGuid().ToString(),
+                Id = x.Id,
                 Name = x.Name,
                 Price = x.Price,
                 Link = x.Link,
                 PathPhoto = x.PathPhoto,
                 IdEcommerce = x.IdEcommerce
-            }).ToArray();
+            });
+            var amazonList = list.Where(x => x.IdEcommerce == "A").ToList();
+            var amazonMin = amazonList.Where(x => decimal.Parse(x.Price.Replace('.', ' ').Trim('€').Trim(' ')) == decimal.Parse(amazonList.Min(x => x.Price.Trim('€')))).SingleOrDefault();
+            var ebayList = list.Where(x => x.IdEcommerce == "B").ToList();
+            var ebayMin = ebayList.Where(x => decimal.Parse(x.Price.Replace('.', ' ').Trim('€').Trim(' ')) == decimal.Parse(ebayList.Min(x => x.Price.Trim('€')))).SingleOrDefault();
+
+            result.Data = new Product[] { amazonMin, ebayMin };
             return result;
         }
     }
@@ -106,6 +113,7 @@ namespace BestPrices.Site.Api
     }
     public class Results
     {
+        public string Id { get; set; }
         public string Name { get; set; }
         public string Price { get; set; }
         public string PathPhoto { get; set; }
