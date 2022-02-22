@@ -1,23 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\giuggioli.17210\\Documents\\GitHub\\BestPrices\\API_pcto\\API_pcto\\API_pcto\\API_pcto.csproj": {}
+    "C:\\Users\\NbkHp\\Documents\\GitHub\\BestPrices\\API_pcto\\API_pcto\\API_pcto\\API_pcto.csproj": {}
   },
   "projects": {
-    "C:\\Users\\giuggioli.17210\\Documents\\GitHub\\BestPrices\\API_pcto\\API_pcto\\API_pcto\\API_pcto.csproj": {
+    "C:\\Users\\NbkHp\\Documents\\GitHub\\BestPrices\\API_pcto\\API_pcto\\API_pcto\\API_pcto.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\giuggioli.17210\\Documents\\GitHub\\BestPrices\\API_pcto\\API_pcto\\API_pcto\\API_pcto.csproj",
+        "projectUniqueName": "C:\\Users\\NbkHp\\Documents\\GitHub\\BestPrices\\API_pcto\\API_pcto\\API_pcto\\API_pcto.csproj",
         "projectName": "API_pcto",
-        "projectPath": "C:\\Users\\giuggioli.17210\\Documents\\GitHub\\BestPrices\\API_pcto\\API_pcto\\API_pcto\\API_pcto.csproj",
-        "packagesPath": "C:\\Users\\giuggioli.17210\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\giuggioli.17210\\Documents\\GitHub\\BestPrices\\API_pcto\\API_pcto\\API_pcto\\obj\\",
+        "projectPath": "C:\\Users\\NbkHp\\Documents\\GitHub\\BestPrices\\API_pcto\\API_pcto\\API_pcto\\API_pcto.csproj",
+        "packagesPath": "C:\\Users\\NbkHp\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\NbkHp\\Documents\\GitHub\\BestPrices\\API_pcto\\API_pcto\\API_pcto\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\giuggioli.17210\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\NbkHp\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -104,7 +105,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.104\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

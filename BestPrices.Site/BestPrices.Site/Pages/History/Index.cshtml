@@ -6,7 +6,7 @@
 @if (Model.User == null)
 {
     <div class="text-center">
-        <h1 class="display-4">@ViewData["Title"]</h1>
+        <h1 class="display-4,text">@ViewData["Title"]</h1>
     </div>
     <div class="text-center mt-5">
         <p>You are not logged in! <a asp-page="/users/register">Register</a> or <a asp-page="/users/login">Log in</a></p>
@@ -15,7 +15,7 @@
 else
 {
     <div class="text-center">
-        <h1 class="display-4">@ViewData["Title"] - @Model.User.Username</h1>
+        <h1 class="display-4,text">@ViewData["Title"] - @Model.User.Username</h1>
     </div>
     @if (!Model.User.IsVerified)
     {

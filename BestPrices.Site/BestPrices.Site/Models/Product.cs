@@ -25,5 +25,8 @@ namespace BestPrices.Site.Models
 
         [Required]
         public string IdEcommerce { get; set; }
+
+        [Required]
+        public int Position { get; set; }
     }
 }

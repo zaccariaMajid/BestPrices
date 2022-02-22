@@ -95,13 +95,30 @@ namespace BestPrices.Site.Api
                 Price = x.Price,
                 Link = x.Link,
                 PathPhoto = x.PathPhoto,
-                IdEcommerce = x.IdEcommerce
+                IdEcommerce = x.IdEcommerce,
+                Position = x.Position
             });
             var amazonList = list.Where(x => x.IdEcommerce == "A").ToList();
-            var amazonMin = amazonList.Where(x => decimal.Parse(x.Price.Replace('.', ' ').Trim('€').Trim(' ')) == decimal.Parse(amazonList.Min(x => x.Price.Trim('€')))).SingleOrDefault();
+            Product amazonMin = null;
+            while (amazonMin == null)
+            {
+                var temp = amazonList.Where(x => decimal.Parse(x.Price.Trim('€')) == decimal.Parse(amazonList.Min(x => x.Price.Trim('€')))).FirstOrDefault();
+                if (temp.Position > 20)
+                    amazonList.Remove(temp);
+                else
+                    amazonMin = temp;
+            }
+            Product ebayMin = null;
             var ebayList = list.Where(x => x.IdEcommerce == "B").ToList();
-            var ebayMin = ebayList.Where(x => decimal.Parse(x.Price.Replace('.', ' ').Trim('€').Trim(' ')) == decimal.Parse(ebayList.Min(x => x.Price.Trim('€')))).SingleOrDefault();
+            while (ebayMin == null)
+            {
+                var tempE = ebayList.Where(x => decimal.Parse(x.Price.Trim('€')) == decimal.Parse(ebayList.Min(x => x.Price.Trim('€')))).FirstOrDefault();
+                if (tempE.Position > 20)
+                    ebayList.Remove(tempE);
+                else
+                    ebayMin = tempE;
 
+            }
             result.Data = new Product[] { amazonMin, ebayMin };
             return result;
         }
@@ -119,6 +136,8 @@ namespace BestPrices.Site.Api
         public string PathPhoto { get; set; }
         public string Link { get; set; }
         public string IdEcommerce { get; set; }
+
+        public int Position { get; set; }
     }
 
     public class ApiResult

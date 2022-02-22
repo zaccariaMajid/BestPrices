@@ -294,3 +294,5 @@ C:\Users\giuggioli.17210\Documents\GitHub\BestPrices\BestPrices.Site\TestSite\ob
 C:\Users\giuggioli.17210\Documents\GitHub\BestPrices\BestPrices.Site\TestSite\obj\Debug\net5.0\ref\TestSite.dll
 C:\Users\giuggioli.17210\Documents\GitHub\BestPrices\BestPrices.Site\TestSite\obj\Debug\net5.0\TestSite.pdb
 C:\Users\giuggioli.17210\Documents\GitHub\BestPrices\BestPrices.Site\TestSite\obj\Debug\net5.0\TestSite.genruntimeconfig.cache
+C:\Users\NbkHp\Documents\GitHub\BestPrices\BestPrices.Site\TestSite\bin\Debug\net5.0\Castle.Core.dll
+C:\Users\NbkHp\Documents\GitHub\BestPrices\BestPrices.Site\TestSite\bin\Debug\net5.0\Moq.dll

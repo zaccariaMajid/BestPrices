@@ -8,5 +8,7 @@
         public string Link { get; set; }
         public string PathPhoto { get; set; }
         public string IdEcommerce { get; set; }
+
+        public int Position { get; set; }
     }
 }

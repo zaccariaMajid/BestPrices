@@ -27,6 +27,7 @@ namespace API_pcto
 
             driver.Url = "https://www.amazon.it/";
             List<Prodotto> elencoProdotti = new List<Prodotto>();
+            int position = 0;
 
             Thread.Sleep(1000);
             driver.FindElement(By.XPath("/html/body/div[1]/span/form/div[3]/span[1]/span/input")).Click();
@@ -46,7 +47,9 @@ namespace API_pcto
                     product.PathPhoto = ele.FindElement(By.ClassName("s-image")).GetAttribute("src");
                     product.Link = ele.FindElement(By.ClassName("a-link-normal")).GetAttribute("href");
                     product.IdEcommerce = "A";
+                    product.Position = position;
                     elencoProdotti.Add(product);
+                    position++;
                 }
                 catch (Exception ex)
                 {
@@ -54,6 +57,7 @@ namespace API_pcto
                 }
             }
 
+            position = 0;
             driver.Url = "https://www.ebay.it/";
             Thread.Sleep(1000);
             driver.FindElement(By.XPath("/html/body/header/table/tbody/tr/td[3]/form/table/tbody/tr/td[1]/div[1]/div/input[1]")).SendKeys(nomeProdottoDaCercare);
@@ -71,7 +75,9 @@ namespace API_pcto
                     product.PathPhoto = ele.FindElement(By.ClassName("s-item__image-img")).GetAttribute("src");
                     product.Link = ele.FindElement(By.ClassName("s-item__link")).GetAttribute("href");
                     product.IdEcommerce = "B";
+                    product.Position = position;
                     elencoProdotti.Add(product);
+                    position++;
                 }
                 catch (Exception ex)
                 {
