@@ -41,19 +41,23 @@ namespace BestPrices.Site.Pages.Research
         {
             Products = _apiManager.GetProducts(SearchText);
             ErrorText = string.Empty;
+            User = CookiesManager.GetUserByCookies(HttpContext.Request, _context);
             foreach (var p in Products)
             {
                 var sameProduct = _context.Products.Where(x => x.Link == p.Link && x.Price == p.Price).SingleOrDefault();
                 if (sameProduct == null)
                     _context.Products.Add(p);
                 if (User != null)
-                    _context.UsersProducts.Add(new UserProduct()
+                {
+                    var newUserProduct = new UserProduct()
                     {
                         Id = Guid.NewGuid().ToString(),
                         IdProduct = p.Id,
                         IdUser = User.Id,
                         Date = DateTime.Now
-                    });
+                    };
+                    _context.UsersProducts.Add(newUserProduct);
+                }
                 _context.SaveChanges();
             }
             if (Products.Count() == 0)
