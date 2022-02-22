@@ -39,5 +39,42 @@ namespace BestPrices.Site.Pages.favourites
         {
             return _context.Ecommerces.SingleOrDefault(x => x.Id == id).Name;
         }
+
+        /// <summary>
+        /// Pages/Favourites/Index?handler=SetFavorite&userId={userId}&productId={productId}
+        /// </summary>
+        /// <param name="userId"></param>
+        /// <returns></returns>
+        public IActionResult OnGetSetFavorite(string userId, string productId)
+        {
+            var u = _context.UsersProducts
+                .Where(x => x.IdUser == userId && x.IdProduct == productId)
+                .FirstOrDefault();
+
+            u.IsFavourite = true;
+
+            _context.SaveChanges();
+
+            return Content("true");
+        }
+
+        /// <summary>
+        /// Pages/Favourites/Index?handler=DeleteFavorite&userId={userId}&productId={productId}
+        /// </summary>
+        /// <param name="userId"></param>
+        /// <param name="productId"></param>
+        /// <returns></returns>
+        public IActionResult OnGetDeleteFavorite(string userId, string productId)
+        {
+            var u = _context.UsersProducts
+                .Where(x => x.IdUser == userId && x.IdProduct == productId)
+                .FirstOrDefault();
+
+            u.IsFavourite = false;
+
+            _context.SaveChanges();
+
+            return Content("true");
+        }
     }
 }

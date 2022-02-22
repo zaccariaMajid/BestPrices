@@ -3,6 +3,34 @@
 @{
     ViewData["Title"] = "Favourites";
 }
+<script>
+    function setFavorite(pId) {
+        var el = document.getElementById('m_' + pId);
+
+        if (el.classList.contains("bi-heart-fill")) {
+
+                fetch('/Favourites/Index?handler=DeleteFavorite&userId=@Model.User.Id&productId=' + pId)
+                .then(r => {
+
+                        el.classList.add("bi-heart");
+                        el.classList.remove("bi-heart-fill");
+
+                });
+
+        } else {
+
+            fetch('/Favourites/Index?handler=SetFavorite&userId=@Model.User.Id&productId=' + pId)
+                .then(r => {
+
+                        el.classList.add("bi-heart-fill");
+                        el.classList.remove("bi-heart");
+
+                });
+    }
+
+    }
+</script>
+
 @if (Model.User == null)
 {
     <div class="text-center">
@@ -43,7 +71,11 @@ else
                                         <h3 class="display-4,text">@product.Name</h3>
                                     </div>
                                     <div class="col text-right mt-2 mr-3">
-                                        <span class="float-right"><i class="bi bi-heart-fill" style="font-size: 2.3em; "></i></span>
+                                        <span class="float-right">
+                                            <a href="javascript: setFavorite('@product.Id')">
+                                                <i id="m_@product.Id" class="bi bi-heart-fill" style="font-size: 2.3em; "></i>
+                                            </a>
+                                        </span>
                                     </div>
                                 </div>
                                 <br />
