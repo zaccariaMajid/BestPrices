@@ -17,5 +17,6 @@ namespace BestPrices.Site.Data
         public DbSet<User> Users { get; set; }
         public DbSet<Ecommerce> Ecommerces { get; set; }
         public DbSet<UserProduct> UsersProducts { get; set; }
+        public DbSet<EmailToken> EmailTokens { get; set; }
     }
 }

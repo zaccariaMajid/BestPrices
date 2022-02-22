@@ -23,19 +23,24 @@ namespace BestPrices.Site.Pages.Users
         public string Password { get; set; }
         [BindProperty]
         public string ErrorText { get; set; }
+        public string Value { get; set; }
         public User User { get; set; }
-        public async Task<IActionResult> OnGetAsync()
+        public async Task<IActionResult> OnGetAsync(string? value)
         {
+            if(value!= null)
+                Value = value;
             User = CookiesManager.GetUserByCookies(HttpContext.Request, _context);
             return Page();
         }
         public async Task<IActionResult> OnPostAsync()
         {
             string encPassword = PasswordManager.EncodePasswordToBase64(Password);
-            User user = _context.Users.SingleOrDefault(x => (x.Username == UsernameEmail || x.Email == UsernameEmail) && x.Password == encPassword);
+            User user = _context.Users.SingleOrDefault(x => (x.Username == UsernameEmail || x.Email == UsernameEmail) && 
+            x.Password == encPassword &&
+            x.IsVerified);
             if(user == null)
             {
-                ErrorText = "Username/email or password wrong";
+                ErrorText = "Wrong username/email or password, or user not verified yet";
                 return Page();
             }
             var cookies = HttpContext.Response.Cookies;

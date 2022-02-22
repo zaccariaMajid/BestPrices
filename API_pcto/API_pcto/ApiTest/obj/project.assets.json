@@ -9619,24 +9619,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\NbkHp\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\giugg\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\NbkHp\\Documents\\GitHub\\BestPrices\\API_pcto\\API_pcto\\ApiTest\\ApiTest.csproj",
+      "projectUniqueName": "C:\\Users\\giugg\\source\\repos\\BestPrices\\API_pcto\\API_pcto\\ApiTest\\ApiTest.csproj",
       "projectName": "ApiTest",
-      "projectPath": "C:\\Users\\NbkHp\\Documents\\GitHub\\BestPrices\\API_pcto\\API_pcto\\ApiTest\\ApiTest.csproj",
-      "packagesPath": "C:\\Users\\NbkHp\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\NbkHp\\Documents\\GitHub\\BestPrices\\API_pcto\\API_pcto\\ApiTest\\obj\\",
+      "projectPath": "C:\\Users\\giugg\\source\\repos\\BestPrices\\API_pcto\\API_pcto\\ApiTest\\ApiTest.csproj",
+      "packagesPath": "C:\\Users\\giugg\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\giugg\\source\\repos\\BestPrices\\API_pcto\\API_pcto\\ApiTest\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\NbkHp\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\giugg\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -9650,8 +9649,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\NbkHp\\Documents\\GitHub\\BestPrices\\API_pcto\\API_pcto\\API_pcto\\API_pcto.csproj": {
-              "projectPath": "C:\\Users\\NbkHp\\Documents\\GitHub\\BestPrices\\API_pcto\\API_pcto\\API_pcto\\API_pcto.csproj"
+            "C:\\Users\\giugg\\source\\repos\\BestPrices\\API_pcto\\API_pcto\\API_pcto\\API_pcto.csproj": {
+              "projectPath": "C:\\Users\\giugg\\source\\repos\\BestPrices\\API_pcto\\API_pcto\\API_pcto\\API_pcto.csproj"
             }
           }
         }
@@ -9714,7 +9713,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
       }
     }
   }

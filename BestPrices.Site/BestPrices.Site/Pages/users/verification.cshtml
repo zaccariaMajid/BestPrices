@@ -1,0 +1,42 @@
+﻿@page
+@model BestPrices.Site.Pages.users.verificationModel
+@{
+    ViewData["Title"] = "Verification";
+}
+<div class="text-center">
+    <h1 class="display-4,text">@ViewData["Title"]</h1>
+</div>
+
+<form method="post">
+    <input type="hidden" asp-for="IdUser" />
+    @if (Model.IsFirstOpen)
+    {
+        <div class="alert alert-success" role="alert">
+            Email sended successfully. Check your email address to complete the registration
+        </div>
+    }
+
+    <div class="text-sm-center mt-5">
+        <div class="row mt-2">
+            <div class="col-sm-3">
+            </div>
+            <div class="col-sm-6">
+                <p>Write 6 chars code here</p>
+                <input type="text" class="form-control" asp-for="Token" />
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-sm-3">
+            </div>
+            <div class="col-sm-6">
+                <input type="submit" class="btn btn-block btn-primary" value="Register" />
+            </div>
+        </div>
+        @if (!string.IsNullOrEmpty(Model.ErrorText))
+        {
+            <div class="alert alert-danger" role="alert">
+                @Html.Raw(Model.ErrorText);
+            </div>
+        }
+    </div>
+</form>

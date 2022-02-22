@@ -1,16 +1,19 @@
 ﻿@page
 @model BestPrices.Site.Pages.Users.LoginModel
 @{
-    if (Model.User == null || !Model.User.IsVerified)
-        ViewData["Title"] = "Switch account - Log in";
-    else
-        ViewData["Title"] = "Log in";
+    ViewData["Title"] = "Log in";
 }
 <div class="text-center">
     <h1 class="display-4,text">@ViewData["Title"]</h1>
 </div>
 
 <form method="post">
+    @if (Model.Value != null)
+    {
+        <div class="alert alert-success" role="alert">
+            @Model.Value
+        </div>
+    }
     <div class="text-sm-center mt-5">
         <div class="row mt-2">
             <div class="col-sm-3">

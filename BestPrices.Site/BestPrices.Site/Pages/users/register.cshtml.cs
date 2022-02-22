@@ -58,7 +58,7 @@ namespace BestPrices.Site.Pages.Users
                 ErrorText = "Passwords don't match";
                 return Page();
             }
-                
+
             var newUser = new User()
             {
                 Id = Guid.NewGuid().ToString(),
@@ -69,7 +69,15 @@ namespace BestPrices.Site.Pages.Users
             _context.Users.Add(newUser);
 
             var emailmanager = new EmailManager();
-            Components components = new Components(username);
+            var newEmailToken = new EmailToken()
+            {
+                Id = Guid.NewGuid().ToString(),
+                IdUser = newUser.Id,
+                Date = DateTime.Now,
+                Token = new TokenMaker().GetToken()
+            };
+            _context.EmailTokens.Add(newEmailToken);
+            Components components = new Components(username, newEmailToken.Token);
             var emailComponents = new EmailComponents
             {
                 NameSender = components.NameSender,
@@ -81,15 +89,16 @@ namespace BestPrices.Site.Pages.Users
             IsSended = emailmanager.SendEmail(emailComponents, Credentials.EmailCredentials);
             IsFirstOpen = false;
 
-            var cookies = Response.Cookies;
-            var options = CookiesManager.CookieOptions;
-            var key = CookiesManager.UserIdKey;
-            cookies.Delete(key);
-            cookies.Append(key, newUser.Id, options);
+            //var cookies = Response.Cookies;
+            //var options = CookiesManager.CookieOptions;
+            //var key = CookiesManager.UserIdKey;
+            //cookies.Delete(key);
+            //cookies.Append(key, newUser.Id, options);
             _context.SaveChanges();
             ErrorText = string.Empty;
+            if (IsSended)
+                return RedirectToPage("/users/verification", new { id = newUser.Id});
             return Page();
-            //return RedirectToPage("/users/Index");
         }
     }
 }

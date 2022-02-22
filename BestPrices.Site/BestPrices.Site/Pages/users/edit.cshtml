@@ -3,7 +3,7 @@
 @{
     ViewData["Title"] = "Edit";
 }
-@if (Model.User == null || !Model.User.IsVerified)
+@if (Model.User != null || Model.User.IsVerified)
 {
     <div class="text-center">
         <h1 class="display-4,text">@ViewData["Title"] - @Model.User.Username</h1>

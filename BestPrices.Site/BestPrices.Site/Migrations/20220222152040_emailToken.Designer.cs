@@ -3,14 +3,16 @@ using System;
 using BestPrices.Site.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace BestPrices.Site.Migrations
 {
     [DbContext(typeof(PriceDbContext))]
-    partial class PriceDbContextModelSnapshot : ModelSnapshot
+    [Migration("20220222152040_emailToken")]
+    partial class emailToken
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
