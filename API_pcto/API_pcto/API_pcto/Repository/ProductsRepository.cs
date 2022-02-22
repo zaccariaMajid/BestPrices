@@ -21,6 +21,7 @@ namespace API_pcto
         {
             ChromeOptions options = new ChromeOptions();
             options.AddArgument("no-sandbox");
+            options.AddArgument("headless");
 
             WebDriver driver = new ChromeDriver(ChromeDriverService.CreateDefaultService(), options, TimeSpan.FromMinutes(3));
             driver.Manage().Timeouts().PageLoad.Add(System.TimeSpan.FromSeconds(30));
@@ -94,15 +95,15 @@ namespace API_pcto
             _context = context;
         }
 
-        public async Task<IEnumerable<Prodotto>> GetProducts()
-        {
-            var query = "SELECT * FROM prodotto";
-            using (var connection = _context.CreateConnection())
-            {
-                var prodotti = await connection.QueryAsync<Prodotto>(query);
-                return prodotti.ToList();
-            }
-        }
+        //public async Task<IEnumerable<Prodotto>> GetProducts()
+        //{
+        //    var query = "SELECT * FROM prodotto";
+        //    using (var connection = _context.CreateConnection())
+        //    {
+        //        var prodotti = await connection.QueryAsync<Prodotto>(query);
+        //        return prodotti.ToList();
+        //    }
+        //}
 
         public string CreateProduct(string nomeProdottoDaCercare)
         {

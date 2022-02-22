@@ -414,3 +414,4 @@ C:\Users\giugg\source\repos\BestPrices\BestPrices.Site\BestPrices.Site\bin\Debug
 C:\Users\giugg\source\repos\BestPrices\BestPrices.Site\BestPrices.Site\obj\Debug\net5.0\Razor\Pages\users\changepassword.cshtml.g.cs
 C:\Users\giugg\source\repos\BestPrices\BestPrices.Site\BestPrices.Site\obj\Debug\net5.0\Razor\Pages\users\edit.cshtml.g.cs
 C:\Users\giugg\source\repos\BestPrices\BestPrices.Site\BestPrices.Site\obj\Debug\net5.0\Razor\Pages\users\verification.cshtml.g.cs
+C:\Users\NbkHp\Documents\GitHub\BestPrices\BestPrices.Site\BestPrices.Site\obj\Debug\net5.0\Razor\Pages\users\verification.cshtml.g.cs

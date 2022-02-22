@@ -17,20 +17,20 @@ namespace API_pcto.Controllers
         {
             _productsRepo = productsRepo;
         }
-        [HttpGet]
-        public async Task<IActionResult> GetProducts()
-        {
-            try
-            {
-                var products = await _productsRepo.GetProducts();
-                return Ok(products);
-            }
-            catch (Exception ex)
-            {
-                //log error
-                return StatusCode(500, ex.Message);
-            }
-        }
+        //[HttpGet]
+        //public async Task<IActionResult> GetProducts()
+        //{
+        //    try
+        //    {
+        //        var products = await _productsRepo.GetProducts();
+        //        return Ok(products);
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        //log error
+        //        return StatusCode(500, ex.Message);
+        //    }
+        //}
         [HttpPost("{nomeProdottoDaCercare}", Name = "nomeProdottoDaCercare")]
         public IActionResult CreateProduct(string nomeProdottoDaCercare)
         {

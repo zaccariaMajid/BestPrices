@@ -85,7 +85,7 @@ namespace BestPrices.Site.Api
             //};
         }
 
-        ApiResult ToApiResult(Result input)
+        public ApiResult ToApiResult(Result input)
         {
             var result = new ApiResult();
             var list = input.Results.Select(x => new Product()
@@ -117,7 +117,6 @@ namespace BestPrices.Site.Api
                     ebayList.Remove(tempE);
                 else
                     ebayMin = tempE;
-
             }
             result.Data = new Product[] { amazonMin, ebayMin };
             return result;

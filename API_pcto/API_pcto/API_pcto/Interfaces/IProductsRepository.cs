@@ -6,7 +6,7 @@ namespace API_pcto.Interfaces
 {
     public interface IProductsRepository
     {
-        public Task<IEnumerable<Prodotto>> GetProducts();
+        //public Task<IEnumerable<Prodotto>> GetProducts();
         public string CreateProduct(string nomeProdottoDaCercare);
     }
 }
