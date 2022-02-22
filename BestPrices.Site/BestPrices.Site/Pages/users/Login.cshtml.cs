@@ -23,8 +23,10 @@ namespace BestPrices.Site.Pages.Users
         public string Password { get; set; }
         [BindProperty]
         public string ErrorText { get; set; }
+        public User User { get; set; }
         public async Task<IActionResult> OnGetAsync()
         {
+            User = CookiesManager.GetUserByCookies(HttpContext.Request, _context);
             return Page();
         }
         public async Task<IActionResult> OnPostAsync()

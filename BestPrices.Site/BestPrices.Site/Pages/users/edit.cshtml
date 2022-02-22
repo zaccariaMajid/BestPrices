@@ -3,47 +3,50 @@
 @{
     ViewData["Title"] = "Edit";
 }
-<div class="text-center">
-    <h1 class="display-4">@ViewData["Title"] - @Model.User.Username</h1>
-</div>
-<form method="post">
-    <div class="text-sm-center mt-5">
-        <div class="row mt-2">
-            <div class="col-sm-3">
-            </div>
-            <div class="col-sm-6">
-                <p>Username</p>
-                <input type="text" class="form-control" asp-for="Username" />
-            </div>
-        </div>
-        <div class="row mt-2">
-            <div class="col-sm-3">
-            </div>
-            <div class="col-sm-6">
-                <p>Email</p>
-                <input type="email" class="form-control" asp-for="Email" />
-            </div>
-        </div>
-        <div class="row mt-4">
-            <div class="col-sm-3">
-            </div>
-            <div class="col-sm-6">
-                <input type="submit" class="btn btn-block btn-primary" value="Confirm" />
-            </div>
-        </div>
-        <div class="row mt-2">
-            <div class="col-sm-3">
-            </div>
-            <div class="col-sm-6 text-left">
-                <a asp-page="/users/Index">< Back</a>
-            </div>
-        </div>
-        @if (!string.IsNullOrEmpty(Model.ErrorText))
-        {
-            <div class="alert alert-danger">
-                <p>@Model.ErrorText</p>
-            </div>
-        }
+@if (Model.User == null || !Model.User.IsVerified)
+{
+    <div class="text-center">
+        <h1 class="display-4">@ViewData["Title"] - @Model.User.Username</h1>
     </div>
+    <form method="post">
+        <div class="text-sm-center mt-5">
+            <div class="row mt-2">
+                <div class="col-sm-3">
+                </div>
+                <div class="col-sm-6">
+                    <p>Username</p>
+                    <input type="text" class="form-control" asp-for="Username" />
+                </div>
+            </div>
+            <div class="row mt-2">
+                <div class="col-sm-3">
+                </div>
+                <div class="col-sm-6">
+                    <p>Email</p>
+                    <input type="email" class="form-control" asp-for="Email" />
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-sm-3">
+                </div>
+                <div class="col-sm-6">
+                    <input type="submit" class="btn btn-block btn-primary" value="Confirm" />
+                </div>
+            </div>
+            <div class="row mt-2">
+                <div class="col-sm-3">
+                </div>
+                <div class="col-sm-6 text-left">
+                    <a asp-page="/users/Index">&lt; Back</a>
+                </div>
+            </div>
+            @if (!string.IsNullOrEmpty(Model.ErrorText))
+            {
+                <div class="alert alert-danger">
+                    <p>@Model.ErrorText</p>
+                </div>
+            }
+        </div>
 
-</form>
+    </form>
+}

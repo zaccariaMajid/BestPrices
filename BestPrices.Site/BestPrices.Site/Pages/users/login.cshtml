@@ -1,7 +1,10 @@
 ﻿@page
 @model BestPrices.Site.Pages.Users.LoginModel
 @{
-    ViewData["Title"] = "Log in";
+    if (Model.User == null || !Model.User.IsVerified)
+        ViewData["Title"] = "Switch account - Log in";
+    else
+        ViewData["Title"] = "Log in";
 }
 <div class="text-center">
     <h1 class="display-4">@ViewData["Title"]</h1>

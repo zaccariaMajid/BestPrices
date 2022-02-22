@@ -19,5 +19,7 @@ namespace BestPrices.Site.Models
 
         [Required]
         public string Password { get; set; }
+        [Required]
+        public bool IsVerified { get; set; }
     }
 }

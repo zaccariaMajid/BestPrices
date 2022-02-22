@@ -1,7 +1,10 @@
 ﻿@page
 @model BestPrices.Site.Pages.Users.RegisterModel
 @{
-    ViewData["Title"] = "Register";
+    if (Model.User == null || !Model.User.IsVerified)
+        ViewData["Title"] = "Switch account - Register";
+    else
+        ViewData["Title"] = "Register";
 }
 <div class="text-center">
     <h1 class="display-4">@ViewData["Title"]</h1>
@@ -59,14 +62,14 @@
         @if (Model.IsSended)
         {
             <div class="alert alert-success" role="alert">
-                Email sended successfully
+                Email sended successfully. View at your email address to complete the registration
             </div>
         }
 
         else if(!Model.IsFirstOpen)
         {
             <div class="alert alert-danger" role="alert">
-                Something has gone wrong sending the email
+                Something has gone wrong sending the email. Unable to complete the registration
             </div>
         }
         @if (!string.IsNullOrEmpty(Model.ErrorText))

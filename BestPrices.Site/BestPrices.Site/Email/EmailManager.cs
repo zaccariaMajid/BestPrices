@@ -45,28 +45,6 @@ namespace BestPrices.Site.Email
                 return toReturn;
             }
         }
-        //public static void SendEmail(EmailComponents components)
-        //{
-        //    string to = components.Sender;
-        //    string from = components.Recipient;
-        //    MailMessage message = new MailMessage(from, to);
-        //    message.Subject = components.Subject;
-        //    message.Body = components.Body;
-        //    SmtpClient client = new SmtpClient(components.Server);
-        //    // Credentials are necessary if the server requires the client
-        //    // to authenticate before it will send email on the client's behalf.
-        //    client.UseDefaultCredentials = true;
-
-        //    try
-        //    {
-        //        client.Send(message);
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        Console.WriteLine("Exception caught in CreateTestMessage2(): {0}",
-        //            ex.ToString());
-        //    }
-        //}
     }
 
     public struct EmailCredentials

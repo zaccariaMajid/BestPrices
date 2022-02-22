@@ -31,8 +31,10 @@ namespace BestPrices.Site.Pages.Users
         public bool IsSended { get; set; }
         [BindProperty]
         public bool IsFirstOpen { get; set; } = true;
+        public User User { get; set; }
         public async Task<IActionResult> OnGetAsync()
         {
+            User = CookiesManager.GetUserByCookies(HttpContext.Request, _context);
             return Page();
         }
         public async Task<IActionResult> OnPostAsync()
@@ -67,14 +69,14 @@ namespace BestPrices.Site.Pages.Users
             _context.Users.Add(newUser);
 
             var emailmanager = new EmailManager();
-            Components.User = username;
+            Components components = new Components(username);
             var emailComponents = new EmailComponents
             {
-                NameSender = Components.NameSender,
-                Sender = Components.Sender,
+                NameSender = components.NameSender,
+                Sender = components.Sender,
                 Recipient = email,
-                Subject = Components.Subject,
-                Body = Components.Body
+                Subject = components.Subject,
+                Body = components.Body
             };
             IsSended = emailmanager.SendEmail(emailComponents, Credentials.EmailCredentials);
             IsFirstOpen = false;

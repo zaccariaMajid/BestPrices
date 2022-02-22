@@ -41,21 +41,21 @@ namespace BestPrices.Site.Pages.Research
         {
             Products = _apiManager.GetProducts(SearchText);
             ErrorText = string.Empty;
-            //foreach (var p in Products)
-            //{
-            //    var sameProduct = _context.Products.Where(x => x.Link == p.Link && x.Price == p.Price).SingleOrDefault();
-            //    if (sameProduct == null)
-            //        _context.Products.Add(p);
-            //    if (User != null)
-            //        _context.UsersProducts.Add(new UserProduct()
-            //        {
-            //            Id = Guid.NewGuid().ToString(),
-            //            IdProduct = p.Id,
-            //            IdUser = User.Id,
-            //            Date = DateTime.Now
-            //        });
-            //    _context.SaveChanges();
-            //}
+            foreach (var p in Products)
+            {
+                var sameProduct = _context.Products.Where(x => x.Link == p.Link && x.Price == p.Price).SingleOrDefault();
+                if (sameProduct == null)
+                    _context.Products.Add(p);
+                if (User != null)
+                    _context.UsersProducts.Add(new UserProduct()
+                    {
+                        Id = Guid.NewGuid().ToString(),
+                        IdProduct = p.Id,
+                        IdUser = User.Id,
+                        Date = DateTime.Now
+                    });
+                _context.SaveChanges();
+            }
             if (Products.Count() == 0)
                 ErrorText = $"No product found searching: '{SearchText}'";
             return Page();

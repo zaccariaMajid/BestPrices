@@ -30,7 +30,7 @@ else
                 <a href="/search/" class="btn btn-outline-primary"><i class="bi bi-search"></i> Search now</a>
             </div>
         </div>
-        @if (Model.User != null)
+        @if (Model.User != null && Model.User.IsVerified)
         {
             <div class="col rounded shadow m-3">
                 <div class="m-2">
