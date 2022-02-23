@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\NbkHp\\Documents\\GitHub\\BestPrices\\BestPrices.Site\\TestSite\\TestSite.csproj": {}
+    "C:\\Users\\mbiss\\OneDrive\\Documenti\\GitHub\\BestPrices\\BestPrices.Site\\TestSite\\TestSite.csproj": {}
   },
   "projects": {
-    "C:\\Users\\NbkHp\\Documents\\GitHub\\BestPrices\\BestPrices.Site\\BestPrices.Site\\BestPrices.Site.csproj": {
+    "C:\\Users\\mbiss\\OneDrive\\Documenti\\GitHub\\BestPrices\\BestPrices.Site\\BestPrices.Site\\BestPrices.Site.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\NbkHp\\Documents\\GitHub\\BestPrices\\BestPrices.Site\\BestPrices.Site\\BestPrices.Site.csproj",
+        "projectUniqueName": "C:\\Users\\mbiss\\OneDrive\\Documenti\\GitHub\\BestPrices\\BestPrices.Site\\BestPrices.Site\\BestPrices.Site.csproj",
         "projectName": "BestPrices.Site",
-        "projectPath": "C:\\Users\\NbkHp\\Documents\\GitHub\\BestPrices\\BestPrices.Site\\BestPrices.Site\\BestPrices.Site.csproj",
-        "packagesPath": "C:\\Users\\NbkHp\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\NbkHp\\Documents\\GitHub\\BestPrices\\BestPrices.Site\\BestPrices.Site\\obj\\",
+        "projectPath": "C:\\Users\\mbiss\\OneDrive\\Documenti\\GitHub\\BestPrices\\BestPrices.Site\\BestPrices.Site\\BestPrices.Site.csproj",
+        "packagesPath": "C:\\Users\\mbiss\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\mbiss\\OneDrive\\Documenti\\GitHub\\BestPrices\\BestPrices.Site\\BestPrices.Site\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\NbkHp\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\mbiss\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -93,21 +89,17 @@
         }
       }
     },
-    "C:\\Users\\NbkHp\\Documents\\GitHub\\BestPrices\\BestPrices.Site\\TestSite\\TestSite.csproj": {
+    "C:\\Users\\mbiss\\OneDrive\\Documenti\\GitHub\\BestPrices\\BestPrices.Site\\TestSite\\TestSite.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\NbkHp\\Documents\\GitHub\\BestPrices\\BestPrices.Site\\TestSite\\TestSite.csproj",
+        "projectUniqueName": "C:\\Users\\mbiss\\OneDrive\\Documenti\\GitHub\\BestPrices\\BestPrices.Site\\TestSite\\TestSite.csproj",
         "projectName": "TestSite",
-        "projectPath": "C:\\Users\\NbkHp\\Documents\\GitHub\\BestPrices\\BestPrices.Site\\TestSite\\TestSite.csproj",
-        "packagesPath": "C:\\Users\\NbkHp\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\NbkHp\\Documents\\GitHub\\BestPrices\\BestPrices.Site\\TestSite\\obj\\",
+        "projectPath": "C:\\Users\\mbiss\\OneDrive\\Documenti\\GitHub\\BestPrices\\BestPrices.Site\\TestSite\\TestSite.csproj",
+        "packagesPath": "C:\\Users\\mbiss\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\mbiss\\OneDrive\\Documenti\\GitHub\\BestPrices\\BestPrices.Site\\TestSite\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\NbkHp\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\mbiss\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -121,8 +113,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\NbkHp\\Documents\\GitHub\\BestPrices\\BestPrices.Site\\BestPrices.Site\\BestPrices.Site.csproj": {
-                "projectPath": "C:\\Users\\NbkHp\\Documents\\GitHub\\BestPrices\\BestPrices.Site\\BestPrices.Site\\BestPrices.Site.csproj"
+              "C:\\Users\\mbiss\\OneDrive\\Documenti\\GitHub\\BestPrices\\BestPrices.Site\\BestPrices.Site\\BestPrices.Site.csproj": {
+                "projectPath": "C:\\Users\\mbiss\\OneDrive\\Documenti\\GitHub\\BestPrices\\BestPrices.Site\\BestPrices.Site\\BestPrices.Site.csproj"
               }
             }
           }
