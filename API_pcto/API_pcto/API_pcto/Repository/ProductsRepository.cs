@@ -30,7 +30,7 @@ namespace API_pcto
             List<Prodotto> elencoProdotti = new List<Prodotto>();
             int position = 0;
 
-            Thread.Sleep(1000);
+           // Thread.Sleep(1000);
             driver.FindElement(By.XPath("/html/body/div[1]/span/form/div[3]/span[1]/span/input")).Click();
             driver.FindElement(By.XPath("/html/body/div[1]/header/div/div[1]/div[2]/div/form/div[3]/div[1]/input")).SendKeys(nomeProdottoDaCercare);
             driver.FindElement(By.XPath("/html/body/div[1]/header/div/div[1]/div[2]/div/form/div[4]/div/span/input")).Click();
@@ -60,7 +60,7 @@ namespace API_pcto
 
             position = 0;
             driver.Url = "https://www.ebay.it/";
-            Thread.Sleep(1000);
+           // Thread.Sleep(1000);
             driver.FindElement(By.XPath("/html/body/header/table/tbody/tr/td[3]/form/table/tbody/tr/td[1]/div[1]/div/input[1]")).SendKeys(nomeProdottoDaCercare);
             driver.FindElement(By.XPath("/html/body/header/table/tbody/tr/td[3]/form/table/tbody/tr/td[3]/input")).Click();
             element = driver.FindElements(By.ClassName("s-item"));
