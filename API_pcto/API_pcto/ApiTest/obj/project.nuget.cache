@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "1hsDcDdCo+/8sCrfN+N97oLuRDNbXHNirH4qUrDmmKrhnXz1ka1T74Ob5OdtOHdaQyEiBMqt3z26PBOzNdwyXg==",
+  "dgSpecHash": "eZvdltNJUs4pXvkflnMW8GsOYTyuT4WdRL8pRJYgOamNuWhPCJWDVmB8J8cks1JQ1iMWD+W3jNfbTWEztrOD+w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\NbkHp\\Documents\\GitHub\\BestPrices\\API_pcto\\API_pcto\\ApiTest\\ApiTest.csproj",
+  "projectFilePath": "C:\\Users\\NbkHp\\Desktop\\API_pcto\\API_pcto\\ApiTest\\ApiTest.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\NbkHp\\.nuget\\packages\\bouncycastle.netcore\\1.8.5\\bouncycastle.netcore.1.8.5.nupkg.sha512",
     "C:\\Users\\NbkHp\\.nuget\\packages\\coverlet.collector\\3.0.2\\coverlet.collector.3.0.2.nupkg.sha512",

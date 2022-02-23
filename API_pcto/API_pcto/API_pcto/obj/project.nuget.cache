@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "tlBrA0WSwnanAWaZlF1u5OOfqhci/y+0DC0nZAMTEA2KPi0zCTFBD/ufNoXsL1vVxKb7Tv6VmVqjzBvb8HHmqw==",
+  "dgSpecHash": "Nr9F/o6tu2pg9CJsJbDNTMEZpyI2umqD50IvAT0dLhNXeul6siTG5XLs0oJ9KQSGo/gwcM7t28V4VMYYjNQ0qw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\NbkHp\\Documents\\GitHub\\BestPrices\\API_pcto\\API_pcto\\API_pcto\\API_pcto.csproj",
+  "projectFilePath": "C:\\Users\\NbkHp\\Desktop\\API_pcto\\API_pcto\\API_pcto\\API_pcto.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\NbkHp\\.nuget\\packages\\bouncycastle.netcore\\1.8.5\\bouncycastle.netcore.1.8.5.nupkg.sha512",
     "C:\\Users\\NbkHp\\.nuget\\packages\\dapper\\2.0.123\\dapper.2.0.123.nupkg.sha512",

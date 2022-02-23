@@ -27,9 +27,7 @@ a {
 /* Sticky footer styles
 -------------------------------------------------- */
 html {
-    font-size: 14px;
-    position: relative;
-    min-height: 100%;
+  font-size: 14px;
 }
 @media (min-width: 768px) {
   html {
@@ -55,10 +53,10 @@ button.accept-policy {
 
 /* Sticky footer styles
 -------------------------------------------------- */
-/*html {
+html {
   position: relative;
   min-height: 100%;
-}*/
+}
 
 body {
   /* Margin bottom by footer height */
