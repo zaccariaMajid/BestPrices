@@ -52,6 +52,9 @@
             <div class="col-sm-2">
             </div>
         </div>
+        <div class="spinner-border" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
         @if (Model.Products != null)
         {
             @foreach (var product in Model.Products)
@@ -69,20 +72,20 @@
                             </div>
                             <div class="col text-right mt-2 mr-3">
                                 <span class="float-right">
-                                <a href="javascript: setFavorite('@product.Id')">
-                                    <i id="m_@product.Id" class="bi bi-heart" style="font-size: 2.3em; "></i>
-                                </a>
+                                    <a href="javascript: setFavorite('@product.Id')">
+                                        <i id="m_@product.Id" class="bi bi-heart" style="font-size: 2.3em; "></i>
+                                    </a>
                                 </span>
                             </div>
                         </div>
                         <br />
                         <div class="row">
                             <div class="col">
-                                @if(@product.IdEcommerce == "A")
+                                @if (@product.IdEcommerce == "A")
                                 {
                                     <h3>@product.Price</h3>
                                 }
-                                @if(@product.IdEcommerce == "B")
+                                @if (@product.IdEcommerce == "B")
                                 {
                                     <h3>@product.Price€</h3>
                                 }
